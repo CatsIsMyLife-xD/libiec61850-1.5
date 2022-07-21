@@ -24,20 +24,21 @@ void Read(){
         float press;    
     };
     struct data* DATA;
-    //DATA = (struct data*)malloc(100 * sizeof(struct  data));
+    DATA = (struct data*)malloc(100 * sizeof(struct  data));
     FILE *file;
     char i = 0;
     file = fopen("iec61850.txt", "r");
-    while (fscanf(file, "%f%f%f", (DATA[i].temper), (DATA[i].humid), (DATA[i].press)) != EOF ){
+    fscanf(file, "%f%f%f", &(DATA[i].temper), &(DATA[i].humid), &(DATA[i].press));
         printf("%.2f %.2f %.2f\n", DATA[i].temper, DATA[i].humid, DATA[i].press); 
         i++;
-    }
+    
+    fclose(file);
 }
 
 int main(int argc, char** argv)
 {
     
-    printf("Сервер запущен\n");
+    printf("Сервер запущен13\n");
     IedServerConfig config = IedServerConfig_create();
     iedServer = IedServer_createWithConfig(&iedModel, NULL, config);
     IedServerConfig_destroy(config);
