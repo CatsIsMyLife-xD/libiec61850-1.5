@@ -14,11 +14,6 @@ printDataSetValues(MmsValue* dataSet)
                 MmsValue_toFloat(MmsValue_getElement(MmsValue_getElement(
                                             MmsValue_getElement(dataSet, i), 0), 0)));
     }
-    for (i = 3; i < 5; i++) {
-        printf("  GGIO1.AnIn%i.mag.f: %f\n", i,
-                MmsValue_toFloat((MmsValue_getElement(MmsValue_getElement(
-                                            MmsValue_getElement(dataSet, i), 0), 0))));
-    }
 }
 
 int main(int argc, char** argv) {
@@ -46,8 +41,6 @@ int main(int argc, char** argv) {
             LinkedList_add(newDataSetEntries, "simpleIOGenericIO/GGIO1.AnIn1[MX]");
             LinkedList_add(newDataSetEntries, "simpleIOGenericIO/GGIO1.AnIn2[MX]");
             LinkedList_add(newDataSetEntries, "simpleIOGenericIO/GGIO1.AnIn3[MX]");
-            LinkedList_add(newDataSetEntries, "simpleIOGenericIO/GGIO1.AnIn4[MX]");
-            LinkedList_add(newDataSetEntries, "simpleIOGenericIO/GGIO1.AnIn1[MX]");
             IedConnection_createDataSet(con, &error, "simpleIOGenericIO/LLN0.AnalogueValues", newDataSetEntries);
 
             LinkedList_destroyStatic(newDataSetEntries);
