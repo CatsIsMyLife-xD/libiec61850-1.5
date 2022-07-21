@@ -16,7 +16,7 @@ printDataSetValues(MmsValue* dataSet)
     }
     for (i = 3; i < 5; i++) {
         printf("  GGIO1.AnIn%i.mag.f: %f\n", i,
-                MmsValue_getBoolean((MmsValue_getElement(MmsValue_getElement(
+                MmsValue_toFloat((MmsValue_getElement(MmsValue_getElement(
                                             MmsValue_getElement(dataSet, i), 0), 0))));
     }
 }

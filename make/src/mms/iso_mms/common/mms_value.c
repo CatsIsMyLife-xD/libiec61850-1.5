@@ -968,6 +968,8 @@ MmsValue_toInt64(const MmsValue* self)
     return integerValue;
 }
 
+
+
 float
 MmsValue_toFloat(const MmsValue* self)
 {
