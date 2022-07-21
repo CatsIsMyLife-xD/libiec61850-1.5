@@ -13,19 +13,22 @@ static IedServer iedServer = NULL;
 
 
 //Подключение к серверу
-struct data {
-    float temper;
-    float humid;
-    float press;    
-    };
+
 
 
 //Считывание из файла
-void Read(struct data* DATA){
+void Read(){
+    struct data {
+        float temper;
+        float humid;
+        float press;    
+    };
+    struct data* DATA;
+    //DATA = (struct data*)malloc(100 * sizeof(struct  data));
     FILE *file;
     char i = 0;
     file = fopen("iec61850.txt", "r");
-    while (fscanf(file, "%f%f%f", (&DATA[i].temper), &(DATA[i].humid), &(DATA[i].press)) != EOF ){
+    while (fscanf(file, "%f%f%f", (DATA[i].temper), (DATA[i].humid), (DATA[i].press)) != EOF ){
         printf("%.2f %.2f %.2f\n", DATA[i].temper, DATA[i].humid, DATA[i].press); 
         i++;
     }
@@ -38,8 +41,8 @@ int main(int argc, char** argv)
     IedServerConfig config = IedServerConfig_create();
     iedServer = IedServer_createWithConfig(&iedModel, NULL, config);
     IedServerConfig_destroy(config);
-    struct data ob[100];
-    Read(ob);
+    
+    Read();
     IedServer_start(iedServer, 102);
     if (!IedServer_isRunning(iedServer)) {
         printf("Сервер уже защущен, проверьте процессы (maybe need root permissions or another server is already using the port)! Exit.\n");
