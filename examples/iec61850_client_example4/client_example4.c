@@ -25,7 +25,6 @@ int main(int argc, char** argv) {
 
     char* hostname;
     int tcpPort = 102;
-
     if (argc > 1)
         hostname = argv[1];
     else
