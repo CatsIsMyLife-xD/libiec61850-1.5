@@ -1,0 +1,87 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 370,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 373,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "/usr/local/share/pkgconfig",
+			"paths" : 
+			[
+				"build/src/libiec61850.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Libraries",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"src/libiec61850.a"
+			],
+			"targetId" : "iec61850::@145eef247bfb46b6828c",
+			"targetIndex" : 2,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Libraries",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"src/libiec61850.so.1.5.1"
+			],
+			"targetId" : "iec61850-shared::@145eef247bfb46b6828c",
+			"targetIndex" : 3,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Libraries",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"src/libiec61850.so"
+			],
+			"targetId" : "iec61850-shared::@145eef247bfb46b6828c",
+			"targetIndex" : 3,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src",
+		"source" : "src"
+	}
+}

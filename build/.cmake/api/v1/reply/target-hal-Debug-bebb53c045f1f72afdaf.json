@@ -1,0 +1,214 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "hal/libhal.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"hal/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 150,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 197,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 71,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 146,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/home/kali/\u0423\u0447\u0435\u0431\u0430/\u0413\u0440\u0430\u043d\u0442/libiec61850-1.5/build/config"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/kali/\u0423\u0447\u0435\u0431\u0430/\u0413\u0440\u0430\u043d\u0442/libiec61850-1.5/src/common/inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/kali/\u0423\u0447\u0435\u0431\u0430/\u0413\u0440\u0430\u043d\u0442/libiec61850-1.5/src/goose"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/kali/\u0423\u0447\u0435\u0431\u0430/\u0413\u0440\u0430\u043d\u0442/libiec61850-1.5/src/sampled_values"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/kali/\u0423\u0447\u0435\u0431\u0430/\u0413\u0440\u0430\u043d\u0442/libiec61850-1.5/src/hal/inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/kali/\u0423\u0447\u0435\u0431\u0430/\u0413\u0440\u0430\u043d\u0442/libiec61850-1.5/src/iec61850/inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/kali/\u0423\u0447\u0435\u0431\u0430/\u0413\u0440\u0430\u043d\u0442/libiec61850-1.5/src/iec61850/inc_private"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/kali/\u0423\u0447\u0435\u0431\u0430/\u0413\u0440\u0430\u043d\u0442/libiec61850-1.5/src/mms/inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/kali/\u0423\u0447\u0435\u0431\u0430/\u0413\u0440\u0430\u043d\u0442/libiec61850-1.5/src/mms/inc_private"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/kali/\u0423\u0447\u0435\u0431\u0430/\u0413\u0440\u0430\u043d\u0442/libiec61850-1.5/src/mms/iso_mms/asn1c"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/kali/\u0423\u0447\u0435\u0431\u0430/\u0413\u0440\u0430\u043d\u0442/libiec61850-1.5/src/logging"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/kali/\u0423\u0447\u0435\u0431\u0430/\u0413\u0440\u0430\u043d\u0442/libiec61850-1.5/hal/inc"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"id" : "hal::@ad971efe0e95b39e260f",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"name" : "hal",
+	"nameOnDisk" : "libhal.a",
+	"paths" : 
+	{
+		"build" : "hal",
+		"source" : "hal"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "hal/socket/linux/socket_linux.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "hal/ethernet/linux/ethernet_linux.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "hal/thread/linux/thread_linux.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "hal/filesystem/linux/file_provider_linux.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "hal/time/unix/time.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "hal/serial/linux/serial_port_linux.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "hal/memory/lib_memory.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

@@ -1,0 +1,227 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-b11818c623c1e3aa95d1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "hal",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-hal-Debug-446f017eb4265e96361c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "hal",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "examples",
+					"childIndexes" : 
+					[
+						3,
+						4,
+						5
+					],
+					"jsonFile" : "directory-examples-Debug-1c8b83b621b6ef38a245.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "examples"
+				},
+				{
+					"build" : "examples/server_example_basic_io",
+					"jsonFile" : "directory-examples.server_example_basic_io-Debug-7d4b75d0c8941b7d6cba.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/server_example_basic_io",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "examples/iec61850_client_example4",
+					"jsonFile" : "directory-examples.iec61850_client_example4-Debug-a40f6a232da95a3b3e38.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/iec61850_client_example4",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "examples/mms_utility",
+					"jsonFile" : "directory-examples.mms_utility-Debug-c588a7fea326d105ab19.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "examples/mms_utility",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-Debug-f007a2e93623086a652f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"name" : "libiec61850",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "hal",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "hal::@ad971efe0e95b39e260f",
+					"jsonFile" : "target-hal-Debug-bebb53c045f1f72afdaf.json",
+					"name" : "hal",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "hal-shared::@ad971efe0e95b39e260f",
+					"jsonFile" : "target-hal-shared-Debug-588659c1cde073edf03c.json",
+					"name" : "hal-shared",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "iec61850::@145eef247bfb46b6828c",
+					"jsonFile" : "target-iec61850-Debug-0a6d9f7896e6e683378f.json",
+					"name" : "iec61850",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "iec61850-shared::@145eef247bfb46b6828c",
+					"jsonFile" : "target-iec61850-shared-Debug-1c3fb31804b38a2952ac.json",
+					"name" : "iec61850-shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "iec61850_client_example4::@c012e323991ca287e6af",
+					"jsonFile" : "target-iec61850_client_example4-Debug-bdb18cc830979139f8b3.json",
+					"name" : "iec61850_client_example4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "mms_utility::@0763792b1daab16e7fba",
+					"jsonFile" : "target-mms_utility-Debug-464fe1c2b811799b304c.json",
+					"name" : "mms_utility",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "server_example_basic_io::@1e1770c499e111348513",
+					"jsonFile" : "target-server_example_basic_io-Debug-84e71bd2201fbc67c3d2.json",
+					"name" : "server_example_basic_io",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kali/\u0423\u0447\u0435\u0431\u0430/\u0413\u0440\u0430\u043d\u0442/libiec61850-1.5/build",
+		"source" : "/home/kali/\u0423\u0447\u0435\u0431\u0430/\u0413\u0440\u0430\u043d\u0442/libiec61850-1.5"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

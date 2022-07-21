@@ -1,0 +1,57 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"hal/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 197,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Libraries",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"hal/libhal.a"
+			],
+			"targetId" : "hal::@ad971efe0e95b39e260f",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Libraries",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"hal/libhal-shared.a"
+			],
+			"targetId" : "hal-shared::@ad971efe0e95b39e260f",
+			"targetIndex" : 1,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "hal",
+		"source" : "hal"
+	}
+}
