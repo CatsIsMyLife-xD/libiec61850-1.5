@@ -31,8 +31,10 @@ int main(int argc, char** argv)
         FILE *file;
         file = fopen("gen.txt", "r");
         float num1, num2, num3;
+        //Считвание данных  из файла
         while (fscanf(file, "%f%f%f", &num1, &num2, &num3) != EOF){
             uint64_t timestamp = Hal_getTimeInMs();
+            //Отправка данных на клиента
             IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_GenericIO_GGIO1_AnIn1_mag_f, num1);
             IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_GenericIO_GGIO1_AnIn2_mag_f, num2);
             IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_GenericIO_GGIO1_AnIn3_mag_f, num3);
