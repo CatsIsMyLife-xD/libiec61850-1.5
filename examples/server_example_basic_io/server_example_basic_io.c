@@ -3,68 +3,47 @@
 #include <stdio.h>
 #include <math.h>
 #include "static_model.h"
+#include <pthread.h>
 
+//Расширение и дополнение функций модуля
 extern IedModel iedModel;
-static int running = 0;
 static IedServer iedServer = NULL;
-
-//Функция перегенерации
-
-
-
-//Подключение к серверу
-
-
-
-//Считывание из файла
-void Read(){
-    struct data {
-        float temper;
-        float humid;
-        float press;    
-    };
-    struct data* DATA;
-    DATA = (struct data*)malloc(100 * sizeof(struct  data));
-    FILE *file;
-    char i = 0;
-    file = fopen("iec61850.txt", "r");
-    fscanf(file, "%f%f%f", &(DATA[i].temper), &(DATA[i].humid), &(DATA[i].press));
-        printf("%.2f %.2f %.2f\n", DATA[i].temper, DATA[i].humid, DATA[i].press); 
-        i++;
-    
-    fclose(file);
-}
+int Count = 1;
 
 int main(int argc, char** argv)
 {
-    
-    printf("Сервер запущен13\n");
+    printf("Сервер запущен\n");
+    //Инициализация конфигов
     IedServerConfig config = IedServerConfig_create();
     iedServer = IedServer_createWithConfig(&iedModel, NULL, config);
     IedServerConfig_destroy(config);
-    
-    Read();
     IedServer_start(iedServer, 102);
+    //Проверка запущен ли сервер
     if (!IedServer_isRunning(iedServer)) {
-        printf("Сервер уже защущен, проверьте процессы (maybe need root permissions or another server is already using the port)! Exit.\n");
+        printf("Сервер уже защущен, проверьте процессы\n");
         IedServer_destroy(iedServer);
         exit(-1);
     }
-    float t = 0.f;
-    while (1) {
-        uint64_t timestamp = Hal_getTimeInMs();
-        t += 0.1f;
-        float an1 = sinf(t);
-        float an2 = sinf(t + 1.f);
-        float an3 = sinf(t + 2.f);
-        IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_GenericIO_GGIO1_AnIn1_mag_f, an1);
-        IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_GenericIO_GGIO1_AnIn2_mag_f, an2);
-        IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_GenericIO_GGIO1_AnIn3_mag_f, an3);
-        IedServer_unlockDataModel(iedServer);
+    //Работа сервера
+    while (1){
+        printf ("День %i \n", Count);
+        system("python3 gen.py");
+        FILE *file;
+        file = fopen("gen.txt", "r");
+        float num1, num2, num3;
+        while (fscanf(file, "%f%f%f", &num1, &num2, &num3) != EOF){
+            uint64_t timestamp = Hal_getTimeInMs();
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_GenericIO_GGIO1_AnIn1_mag_f, num1);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_GenericIO_GGIO1_AnIn2_mag_f, num2);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_GenericIO_GGIO1_AnIn3_mag_f, num3);
+            IedServer_unlockDataModel(iedServer);
+        }
+        Thread_sleep(1000);
+        Count++;
+        file = fclose (file);
     }
-
     IedServer_stop(iedServer);
-
     IedServer_destroy(iedServer);
     return 0;
-} 
+}
+
