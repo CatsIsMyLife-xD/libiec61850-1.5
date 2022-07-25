@@ -5,3 +5,6 @@
 <h3>Запустить клиента <h3>
 <h3>на другой машине:   cd examples/iec61850_client_example4<h3>
                     <h3>./iec61850_client_example4<h3>
+
+<H1>Ссылка на оригинальный гит:<H1>
+    https://github.com/mz-automation/libiec61850
