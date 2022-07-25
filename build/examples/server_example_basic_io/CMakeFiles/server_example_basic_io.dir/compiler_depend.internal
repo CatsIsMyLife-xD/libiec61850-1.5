@@ -94,6 +94,17 @@ examples/server_example_basic_io/CMakeFiles/server_example_basic_io.dir/server_e
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h
  /home/kali/Учеба/Грант/libiec61850-1.5/examples/server_example_basic_io/static_model.h
  /home/kali/Учеба/Грант/libiec61850-1.5/src/iec61850/inc/iec61850_model.h
+ /usr/include/pthread.h
+ /usr/include/sched.h
+ /usr/include/x86_64-linux-gnu/bits/sched.h
+ /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h
+ /usr/include/x86_64-linux-gnu/bits/cpu-set.h
+ /usr/include/time.h
+ /usr/include/x86_64-linux-gnu/bits/time.h
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h
+ /usr/include/x86_64-linux-gnu/bits/setjmp.h
+ /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h
 
 examples/server_example_basic_io/CMakeFiles/server_example_basic_io.dir/static_model.c.o
  /home/kali/Учеба/Грант/libiec61850-1.5/examples/server_example_basic_io/static_model.c

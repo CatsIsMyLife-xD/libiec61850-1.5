@@ -7,8 +7,6 @@ static void
 printDataSetValues(MmsValue* dataSet)
 {
     int i;
-    printf ("\n");
-    printf("Температура ");
     for (i = 0; i < 3; i++) {
         printf("  GGIO1.AnIn%i.mag.f: %f\n", i,
                 MmsValue_toFloat(MmsValue_getElement(MmsValue_getElement(
