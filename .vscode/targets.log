@@ -5,9 +5,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Sun Jul 24 23:32:16 2022
+# Make data base, printed on Fri Aug 12 22:37:14 2022
 
 # Variables
 
@@ -22,7 +21,7 @@ src_to = $(addprefix $(LIB_OBJS_DIR)/,$(subst .c,$1,$2))
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-766ea125-ebe0-438a-b1a8-ab0a18bc6c6c.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-fe2094f3-8067-46b9-bc76-2f3f1df96dc2.sock
 # environment
 VSCODE_CWD = /home/kali
 # makefile (from 'Makefile', line 75)
@@ -56,6 +55,7 @@ LIB_SOURCES = $(call get_sources,$(LIB_SOURCE_DIRS))
 # environment
 XDG_DATA_DIRS = /usr/share/gnome:/usr/local/share/:/usr/share/
 # environment
+ 
 OLDPWD = /home/kali
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
@@ -112,7 +112,7 @@ MAKEFILE_LIST := Makefile make/target_system.mk
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 3910
+VSCODE_PID = 52784
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -120,7 +120,7 @@ XDG_SESSION_TYPE = x11
 # makefile (from 'make/target_system.mk', line 160)
 RANLIB = $(TOOLCHAIN_PREFIX)ranlib
 # environment
-SESSION_MANAGER = local/kali:@/tmp/.ICE-unix/1796,unix/kali:/tmp/.ICE-unix/1796
+SESSION_MANAGER = local/kali:@/tmp/.ICE-unix/1745,unix/kali:/tmp/.ICE-unix/1745
 # automatic
 *F = $(notdir $*)
 # makefile (from 'make/target_system.mk', line 3)
@@ -178,7 +178,7 @@ LDLIBS = -lpthread
 # environment
 LESS_TERMCAP_mb = [1;31m
 # environment
-INVOCATION_ID = d26f89722a0e4f06adee758b05bbc831
+INVOCATION_ID = 69d1cd40d96542b9bea273f497d7303a
 # makefile (from 'make/target_system.mk', line 151)
 CPP = $(TOOLCHAIN_PREFIX)g++
 # makefile (from 'make/target_system.mk', line 8)
@@ -186,7 +186,6 @@ UCLINUX_ARM_TOOLCHAIN_PREFIX = arm-uclinux-elf-
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
- 
 USERNAME = kali
 # automatic
 ?F = $(notdir $?)
@@ -213,7 +212,7 @@ LIBIEC_HOME = .
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 1815
+SYSTEMD_EXEC_PID = 1767
 # environment
 DISPLAY = :1
 # environment
@@ -227,11 +226,11 @@ MAKE_VERSION := 4.3
 # 'override' directive
 .SHELLSTATUS := 0
 # environment
-MANAGERPID = 1530
+MANAGERPID = 1442
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3910
+GIO_LAUNCHED_DESKTOP_FILE_PID = 52784
 # environment
-SSH_AGENT_PID = 1735
+SSH_AGENT_PID = 1646
 # environment
 _ = /usr/share/code/code
 # makefile (from 'Makefile', line 125)
@@ -249,7 +248,7 @@ MINGW64_TOOLCHAIN_PREFIX = x86_64-w64-mingw32-
 # environment
 POWERSHELL_TELEMETRY_OPTOUT = 1
 # environment
-JOURNAL_STREAM = 8:14003
+JOURNAL_STREAM = 8:26241
 # makefile (from 'make/target_system.mk', line 10)
 MINGW_TOOLCHAIN_PREFIX = i586-mingw32msvc-
 # environment
@@ -306,6 +305,7 @@ DYNLIB_LDFLAGS = -lpthread
 # src/mms/iso_session (device 66306, inode 18090138): 3 files, no impossibilities.
 # hal/time/unix (device 66306, inode 18220766): 3 files, no impossibilities.
 # src/mms/iso_cotp (device 66306, inode 18089907): 3 files, no impossibilities.
+ 
 # src/iec61850/server (device 66306, inode 18089842): 5 files, no impossibilities.
 # hal/ethernet/linux (device 66306, inode 18220650): 3 files, no impossibilities.
 # src/mms/iso_presentation (device 66306, inode 18090133): 3 files, no impossibilities.
@@ -483,7 +483,6 @@ build/src/mms/iso_mms/asn1c/ber_decoder.o:
 #  File has not been updated.
 
 # Not a target:
- 
 build/src/mms/iso_mms/asn1c/NULL.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -606,6 +605,7 @@ build/src/mms/iso_mms/server/mms_read_service.o:
 # Not a target:
 build/src/mms/iso_mms/asn1c/OCTET_STRING.o:
 #  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -777,7 +777,6 @@ build/src/mms/iso_server/iso_connection.o:
 
 clean:
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 189):
@@ -909,6 +908,7 @@ build/src/iec61850/server/impl/ied_server.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 
 # Not a target:
 build/hal/thread/linux/thread_linux.o:
@@ -1066,7 +1066,6 @@ build/src/mms/iso_mms/asn1c/InitResponseDetail.o:
 
 # Not a target:
 build/src/mms/iso_mms/asn1c/WriteRequest.o:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -1214,6 +1213,7 @@ build/src/iec61850/client/ied_connection.o:
 
 # Not a target:
 build/src/mms/iso_mms/asn1c/constr_SEQUENCE.o:
+ 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -1342,7 +1342,6 @@ cppcheck: lib
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 #  recipe to execute (from 'Makefile', line 157):
 	cppcheck --force --std=c99 --enable=all $(LIB_INCLUDES) $(LIB_SOURCES) 2> cppcheck-output.xml
 
@@ -1478,6 +1477,7 @@ build/src/mms/iso_mms/asn1c/UnconfirmedPDU.o:
 #  File has not been updated.
 
 # Not a target:
+ 
 build/src/mms/iso_mms/asn1c/GetNameListRequest.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -1584,14 +1584,14 @@ build/src/mms/iso_mms/asn1c/DeleteNamedVariableListResponse.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 2 (1) / strings = 528 / storage = 14195 B / avg = 26 B
-# current buf: size = 8162 B / used = 6034 B / count = 137 / avg = 44 B
-# other used: total = 8161 B / count = 391 / avg = 20 B
-# other free: total = 1 B / max = 1 B / min = 1 B / avg = 1 B
+# strcache buffers: 2 (0) / strings = 528 / storage = 14198 B / avg = 26 B
+# current buf: size = 8162 B / used = 6083 B / count = 138 / avg = 44 B
+# other used: total = 8115 B / count = 390 / avg = 20 B
+# other free: total = 47 B / max = 47 B / min = 47 B / avg = 47 B
 
 # strcache performance: lookups = 796 / hit rate = 33%
 # hash-table stats:
 # Load=528/8192=6%, Rehash=0, Collisions=39/796=5%
-# Finished Make data base on Sun Jul 24 23:32:16 2022
+# Finished Make data base on Fri Aug 12 22:37:14 2022
 
  

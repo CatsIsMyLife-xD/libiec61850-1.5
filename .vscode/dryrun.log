@@ -265,7 +265,6 @@ gcc -g  -std=gnu99 -Wno-error=format  -Wstrict-prototypes -Wuninitialized  -Wsig
 echo compiling InitResponseDetail.c
 mkdir -p build/src/mms/iso_mms/asn1c/
 gcc -g  -std=gnu99 -Wno-error=format  -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -Wextra -Wno-format -c -Iconfig -Ihal/inc -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -Isrc/tls -o build/src/mms/iso_mms/asn1c/InitResponseDetail.o src/mms/iso_mms/asn1c/InitResponseDetail.c
- 
 echo compiling InitiateErrorPdu.c
 mkdir -p build/src/mms/iso_mms/asn1c/
 gcc -g  -std=gnu99 -Wno-error=format  -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -Wextra -Wno-format -c -Iconfig -Ihal/inc -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -Isrc/tls -o build/src/mms/iso_mms/asn1c/InitiateErrorPdu.o src/mms/iso_mms/asn1c/InitiateErrorPdu.c
@@ -459,9 +458,9 @@ echo compiling sv_subscriber.c
 mkdir -p build/src/sampled_values/
 gcc -g  -std=gnu99 -Wno-error=format  -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -Wextra -Wno-format -c -Iconfig -Ihal/inc -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -Isrc/tls -o build/src/sampled_values/sv_subscriber.o src/sampled_values/sv_subscriber.c
 echo compiling client_control.c
+ 
 mkdir -p build/src/iec61850/client/
 gcc -g  -std=gnu99 -Wno-error=format  -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -Wextra -Wno-format -c -Iconfig -Ihal/inc -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -Isrc/tls -o build/src/iec61850/client/client_control.o src/iec61850/client/client_control.c
- 
 echo compiling client_goose_control.c
 mkdir -p build/src/iec61850/client/
 gcc -g  -std=gnu99 -Wno-error=format  -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -Wextra -Wno-format -c -Iconfig -Ihal/inc -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -Isrc/tls -o build/src/iec61850/client/client_goose_control.o src/iec61850/client/client_goose_control.c
