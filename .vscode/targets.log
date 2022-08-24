@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Aug 22 11:59:37 2022
+# Make data base, printed on Wed Aug 24 18:37:55 2022
 
 # Variables
 
@@ -16,26 +16,22 @@ GDK_BACKEND = x11
 LC_ALL = C
 # makefile (from 'make/target_system.mk', line 159)
 AR = $(TOOLCHAIN_PREFIX)ar
+# environment
+GTK_RC_FILES = /etc/gtk/gtkrc:/home/kali/.gtkrc:/home/kali/.config/gtkrc
 # makefile (from 'Makefile', line 126)
 src_to = $(addprefix $(LIB_OBJS_DIR)/,$(subst .c,$1,$2))
 # environment
-GJS_DEBUG_OUTPUT = stderr
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-c34acb92-9526-4ffb-abca-c52dfe165ed2.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-1e594a6e-22be-4da2-aab8-55d25e6779bb.sock
 # environment
 VSCODE_CWD = /home/kali
 # makefile (from 'Makefile', line 75)
 LIB_INCLUDE_DIRS = config hal/inc src/common/inc src/mms/iso_mms/asn1c src/mms/inc src/mms/inc_private src/goose src/sampled_values src/iec61850/inc src/iec61850/inc_private src/logging src/tls
-# environment
-WINDOWPATH = 2
 # makefile (from 'Makefile', line 89)
 LIB_INCLUDES = $(addprefix -I,$(LIB_INCLUDE_DIRS))
 # environment
 LESS_TERMCAP_me = [0m
 # makefile (from 'make/target_system.mk', line 15)
 POWERPC_TOOLCHAIN_PREFIX = powerpc-linux-gnu-
-# environment
-GDM_LANG = ru_RU.UTF-8
 # default
 MAKE_COMMAND := make
 # environment
@@ -53,7 +49,7 @@ PWD = /home/kali/Учеба/Грант/libiec61850-1.5
 # makefile (from 'Makefile', line 128)
 LIB_SOURCES = $(call get_sources,$(LIB_SOURCE_DIRS))
 # environment
-XDG_DATA_DIRS = /usr/share/gnome:/usr/local/share/:/usr/share/
+XDG_DATA_DIRS = /usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop
 # environment
 OLDPWD = /home/kali
 # automatic
@@ -65,13 +61,15 @@ VSCODE_LOG_STACK = false
 # environment
 VSCODE_CODE_CACHE_PATH = /home/kali/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
 # environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
+# environment
 LANG = C
 # environment
 POWERSHELL_UPDATECHECK = Off
 # makefile (from 'make/target_system.mk', line 123)
 HAL_IMPL = POSIX
 # environment
-XAUTHORITY = /run/user/1000/gdm/Xauthority
+XAUTHORITY = /home/kali/.Xauthority
 # default
 .LOADED := 
 # environment
@@ -95,15 +93,21 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 LESS_TERMCAP_ue = [0m
 # environment
+PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
+# environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXX5WO8CA/agent.1379
 # default
 .SHELLFLAGS := -c
+# environment
+XDG_CONFIG_DIRS = /home/kali/.config/kdedefaults:/etc/xdg
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
-XDG_SESSION_DESKTOP = gnome
+XCURSOR_THEME = breeze_cursors
+# environment
+XDG_SESSION_DESKTOP = KDE
 # makefile (from 'make/target_system.mk', line 1)
 MAKEFILE_LIST := Makefile make/target_system.mk
 # automatic
@@ -111,7 +115,7 @@ MAKEFILE_LIST := Makefile make/target_system.mk
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 15957
+VSCODE_PID = 108552
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -119,7 +123,7 @@ XDG_SESSION_TYPE = x11
 # makefile (from 'make/target_system.mk', line 160)
 RANLIB = $(TOOLCHAIN_PREFIX)ranlib
 # environment
-SESSION_MANAGER = local/kali:@/tmp/.ICE-unix/2055,unix/kali:/tmp/.ICE-unix/2055
+SESSION_MANAGER = local/kali:@/tmp/.ICE-unix/1575,unix/kali:/tmp/.ICE-unix/1575
 # automatic
 *F = $(notdir $*)
 # makefile (from 'make/target_system.mk', line 3)
@@ -127,7 +131,7 @@ MIPSEL_TOOLCHAIN_PREFIX = mipsel-openwrt-linux-
 # makefile (from 'make/target_system.mk', line 140)
 LIB_OBJS_DIR = $(LIBIEC_HOME)/build
 # environment
-QT_QPA_PLATFORMTHEME = qt5ct
+QT_QPA_PLATFORMTHEME = 
 # environment
 CHROME_DESKTOP = code-url-handler.desktop
 # environment
@@ -138,24 +142,18 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"4165c719fdf7a78444ed970b4565033b.ru","_translationsConfigFile":"/home/kali/.config/Code/clp/4165c719fdf7a78444ed970b4565033b.ru/tcf.json","_cacheRoot":"/home/kali/.config/Code/clp/4165c719fdf7a78444ed970b4565033b.ru","_resolvedLanguagePackCoreLocation":"/home/kali/.config/Code/clp/4165c719fdf7a78444ed970b4565033b.ru/30d9c6cd9483b2cc586687151bcbcd635f373630","_corruptedFile":"/home/kali/.config/Code/clp/4165c719fdf7a78444ed970b4565033b.ru/corrupted.info","_languagePackSupport":true}
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
-# environment
-GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # makefile
 SHELL = /bin/sh
 # environment
 LESS_TERMCAP_us = [1;32m
 # default
 MAKECMDGOALS := all
-# environment
-XMODIFIERS = @im=ibus
 # makefile (from 'make/target_system.mk', line 9)
 UCLINUX_XPORT_TOOLCHAIN_PREFIX = m68k-uclinux-
-# environment
-GJS_DEBUG_TOPICS = JS ERROR;JS LOG
-# environment
-SHLVL = 0
 # makefile (from 'make/target_system.mk', line 167)
 LIB_NAME = $(LIB_OBJS_DIR)/libiec61850.a
+# environment
+SHLVL = 0
 # makefile (from 'Makefile', line 122)
 LIB_API_HEADER_FILES = hal/inc/hal_time.h  hal/inc/hal_thread.h hal/inc/hal_filesystem.h hal/inc/tls_config.h hal/inc/lib_memory.h hal/inc/hal_base.h src/common/inc/libiec61850_common_api.h src/common/inc/linked_list.h src/iec61850/inc/iec61850_client.h src/iec61850/inc/iec61850_common.h src/iec61850/inc/iec61850_server.h src/iec61850/inc/iec61850_model.h src/iec61850/inc/iec61850_cdc.h src/iec61850/inc/iec61850_dynamic_model.h src/iec61850/inc/iec61850_config_file_parser.h src/mms/inc/mms_value.h src/mms/inc/mms_common.h src/mms/inc/mms_types.h src/mms/inc/mms_type_spec.h src/mms/inc/mms_client_connection.h src/mms/inc/mms_server.h src/mms/inc/iso_connection_parameters.h src/goose/goose_subscriber.h src/goose/goose_receiver.h src/goose/goose_publisher.h src/sampled_values/sv_subscriber.h src/sampled_values/sv_publisher.h src/logging/logging_api.h
 # environment
@@ -163,11 +161,13 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/kali/.dotnet/tools
+PATH = /usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin:/home/kali/.dotnet/tools
 # environment
 LESS_TERMCAP_se = [0m
 # default
 MAKEFILES := 
+# environment
+LANGUAGE = 
 # automatic
 ^F = $(notdir $^)
 # environment
@@ -177,43 +177,47 @@ LDLIBS = -lpthread
 # environment
 LESS_TERMCAP_mb = [1;31m
 # environment
-INVOCATION_ID = f41ab7cd4228409bb8cde7e252cbadae
+INVOCATION_ID = bb9f7b5048ca4561960739e2151568af
 # makefile (from 'make/target_system.mk', line 151)
 CPP = $(TOOLCHAIN_PREFIX)g++
 # makefile (from 'make/target_system.mk', line 8)
 UCLINUX_ARM_TOOLCHAIN_PREFIX = arm-uclinux-elf-
 # environment
 VSCODE_LOG_NATIVE = false
-# environment
-USERNAME = kali
 # automatic
 ?F = $(notdir $?)
 # environment
-XDG_CURRENT_DESKTOP = GNOME
+KDE_APPLICATIONS_AS_SCOPE = 1
+# environment
+XDG_SEAT = seat0
+# environment
+XDG_CURRENT_DESKTOP = KDE
 # environment
 LS_COLORS = :ow=30;44:
 # automatic
 +F = $(notdir $+)
 # environment
-DESKTOP_SESSION = gnome
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = GNOME
+DESKTOP_SESSION = plasma
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = KDE
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
 LOGNAME = kali
 # makefile (from 'Makefile', line 124)
 get_sources_from_directory = $(wildcard $1/*.c)
-# environment
-GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile (from 'Makefile', line 1)
 LIBIEC_HOME = .
+# environment
+XDG_VTNR = 7
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 2074
+SYSTEMD_EXEC_PID = 1605
 # environment
-DISPLAY = :1
+DISPLAY = :0
 # environment
 USER = kali
 # environment
@@ -222,14 +226,14 @@ GTK_MODULES = gail:atk-bridge
 LIB_SOURCE_DIRS = src/mms/iso_acse src/mms/iso_acse/asn1c src/mms/iso_presentation/asn1c  src/mms/iso_presentation src/mms/iso_session src/common src/mms/asn1 src/mms/iso_cotp src/mms/iso_mms/server src/mms/iso_mms/client src/mms/iso_client src/mms/iso_common src/mms/iso_mms/common src/mms/iso_mms/asn1c src/mms/iso_server src/logging src/goose src/sampled_values src/iec61850/client src/iec61850/common src/iec61850/server src/iec61850/server/model src/iec61850/server/mms_mapping src/iec61850/server/impl hal/socket/linux hal/thread/linux hal/ethernet/linux hal/filesystem/linux hal/time/unix hal/serial/linux hal/memory
 # default
 MAKE_VERSION := 4.3
+# environment
+KDE_SESSION_UID = 1000
 # 'override' directive
 .SHELLSTATUS := 0
 # environment
-MANAGERPID = 1782
+MANAGERPID = 1324
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 15957
-# environment
-SSH_AGENT_PID = 1992
+SSH_AGENT_PID = 1433
 # environment
 _ = /usr/share/code/code
 # makefile (from 'Makefile', line 125)
@@ -247,7 +251,7 @@ MINGW64_TOOLCHAIN_PREFIX = x86_64-w64-mingw32-
 # environment
 POWERSHELL_TELEMETRY_OPTOUT = 1
 # environment
-JOURNAL_STREAM = 8:25407
+JOURNAL_STREAM = 8:25227
 # makefile (from 'make/target_system.mk', line 10)
 MINGW_TOOLCHAIN_PREFIX = i586-mingw32msvc-
 # environment
@@ -255,17 +259,22 @@ XDG_SESSION_CLASS = user
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /home/kali
+GTK2_RC_FILES = /etc/gtk-2.0/gtkrc:/home/kali/.gtkrc-2.0:/home/kali/.config/gtkrc-2.0
 # environment
-QT_IM_MODULE = ibus
+HOME = /home/kali
 # environment
 _JAVA_OPTIONS = -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
 # environment
+ 
 ELECTRON_RUN_AS_NODE = 1
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-f2138f4e-1.68.1-main.sock
 # environment
+XDG_SESSION_ID = 3
+# environment
 DOTNET_CLI_TELEMETRY_OPTOUT = 1
+# environment
+XCURSOR_SIZE = 24
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -280,21 +289,20 @@ SUFFIXES :=
 TARGET = POSIX
 # environment
 QT_AUTO_SCREEN_SCALE_FACTOR = 0
+# environment
+KDE_SESSION_VERSION = 5
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # makefile (from 'make/target_system.mk', line 150)
 CC = $(TOOLCHAIN_PREFIX)gcc
- 
 # environment
-XDG_MENU_PREFIX = gnome-
-# environment
-GDMSESSION = gnome
+KDE_FULL_SESSION = true
 # makefile (from 'make/target_system.mk', line 184)
 DYN_LIB_NAME = $(LIB_OBJS_DIR)/libiec61850.so
 # makefile (from 'make/target_system.mk', line 146)
 DYNLIB_LDFLAGS = -lpthread
 # variable set hash-table stats:
-# Load=141/1024=14%, Rehash=0, Collisions=52/539=10%
+# Load=145/1024=14%, Rehash=0, Collisions=42/533=8%
 
 # Pattern-specific Variable Values
 
@@ -349,270 +357,858 @@ build/%.o: %.c config
 # 1 implicit rules, 0 (0.0%) terminal.
 # Files
 
-# Not a target:
-build/src/mms/iso_mms/client/mms_client_read.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/mms/iso_mms/client/mms_client_read.o: src/mms/iso_mms/client/mms_client_read.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/client/mms_client_read'
+#  Last modified 2022-08-22 12:16:45.466028258
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/ConfirmedRequestPdu.o: src/mms/iso_mms/asn1c/ConfirmedRequestPdu.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ConfirmedRequestPdu'
+#  Last modified 2022-08-22 12:16:46.522048942
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/ConfirmedRequestPdu.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/BOOLEAN.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/asn1/ber_decode.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/ber_tlv_length.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/client/mms_client_initiate.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/server/mms_access_result.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/GetVariableAccessAttributesResponse.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/constr_SEQUENCE.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/goose/goose_subscriber.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/per_support.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/asn1/ber_decode.o: src/mms/asn1/ber_decode.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/asn1/ber_decode'
+#  Last modified 2022-08-22 12:16:43.58199136
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/AlternateAccess.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+hal/filesystem/linux/file_provider_linux.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-10 14:08:15
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/client/mms_client_initiate.o: src/mms/iso_mms/client/mms_client_initiate.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/client/mms_client_initiate'
+#  Last modified 2022-08-22 12:16:45.318025359
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/GetVariableAccessAttributesResponse.o: src/mms/iso_mms/asn1c/GetVariableAccessAttributesResponse.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/GetVariableAccessAttributesResponse'
+#  Last modified 2022-08-22 12:16:47.494067982
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/goose/goose_subscriber.o: src/goose/goose_subscriber.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/goose/goose_subscriber'
+#  Last modified 2022-08-22 12:16:49.62610975
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/AlternateAccess.o: src/mms/iso_mms/asn1c/AlternateAccess.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/AlternateAccess'
+#  Last modified 2022-08-22 12:16:46.042039539
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/server/mms_journal.o: src/mms/iso_mms/server/mms_journal.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_journal'
+#  Last modified 2022-08-22 12:16:44.310005617
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/constraints.o: src/mms/iso_mms/asn1c/constraints.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/constraints'
+#  Last modified 2022-08-22 12:16:46.662051684
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/server/mms_journal.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/GetVariableAccessAttributesRequest.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/client/mms_client_identify.o: src/mms/iso_mms/client/mms_client_identify.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/client/mms_client_identify'
+#  Last modified 2022-08-22 12:16:45.282024654
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/constraints.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/client/mms_client_read.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
 
-# Not a target:
-build/src/mms/iso_mms/client/mms_client_identify.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/mms/iso_mms/asn1c/per_encoder.o: src/mms/iso_mms/asn1c/per_encoder.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/per_encoder'
+#  Last modified 2022-08-22 12:16:48.330084359
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
-# Not a target:
-build/src/mms/iso_mms/asn1c/per_encoder.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/iec61850/server/model/cdc.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/common/conversions.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/NativeInteger.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/GetVariableAccessAttributesRequest.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/iec61850/common/iec61850_common.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/goose/goose_publisher.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/hal/serial/linux/serial_port_linux.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/iec61850/server/mms_mapping/mms_mapping.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/DataAccessError.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/xer_support.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/ber_decoder.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/NULL.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/client/mms_client_named_variable_list.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/ListOfVariableSeq.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_server/iso_server.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/common/mms_common_msg.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/hal/filesystem/linux/file_provider_linux.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/ReadResponse.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/Address.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/InitiateResponsePdu.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/TimeOfDay.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/InformationReport.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/common/mem_alloc_linked_list.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/xer_decoder.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/iec61850/server/mms_mapping/reporting.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_common/iso_connection_parameters.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/server/mms_association_service.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
+build/src/iec61850/server/model/cdc.o: src/iec61850/server/model/cdc.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/server/model/cdc'
  
-build/src/mms/iso_mms/asn1c/Integer16.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2022-08-22 12:16:50.378124485
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/common/conversions.o: src/common/conversions.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/common/conversions'
+#  Last modified 2022-08-22 12:16:43.289985642
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/Unsigned16.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+hal/ethernet/linux/ethernet_linux.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-10 14:08:15
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/server/mms_server_common.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/AccessResult.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/NativeInteger.o: src/mms/iso_mms/asn1c/NativeInteger.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/NativeInteger'
+#  Last modified 2022-08-22 12:16:48.026078403
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/server/mms_read_service.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/client/mms_client_connection.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/OCTET_STRING.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/InitiateResponsePdu.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/Unsigned32.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/asn_codecs_prim.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/client/mms_client_files.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/asn1c/NativeInteger.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/GetVariableAccessAttributesRequest.o: src/mms/iso_mms/asn1c/GetVariableAccessAttributesRequest.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/GetVariableAccessAttributesRequest'
+#  Last modified 2022-08-22 12:16:47.470067512
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/iec61850/common/iec61850_common.o: src/iec61850/common/iec61850_common.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/common/iec61850_common'
+#  Last modified 2022-08-22 12:16:50.29012276
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/iec61850/client/ied_connection.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.048897734
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/common/buffer_chain.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.044897654
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/asn1c/GetNameListRequest.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
+
+build/src/goose/goose_publisher.o: src/goose/goose_publisher.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/goose/goose_publisher'
+#  Last modified 2022-08-22 12:16:49.550108261
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/hal/serial/linux/serial_port_linux.o: hal/serial/linux/serial_port_linux.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'hal/serial/linux/serial_port_linux'
+#  Last modified 2022-08-22 12:16:51.670149801
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/iec61850/server/mms_mapping/mms_mapping.o: src/iec61850/server/mms_mapping/mms_mapping.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/server/mms_mapping/mms_mapping'
+#  Last modified 2022-08-22 12:16:51.042137495
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/iec61850/server/model/model.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.052897813
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/DataAccessError.o: src/mms/iso_mms/asn1c/DataAccessError.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/DataAccessError'
+#  Last modified 2022-08-22 12:16:47.078059833
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/xer_support.o: src/mms/iso_mms/asn1c/xer_support.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/xer_support'
+#  Last modified 2022-08-22 12:16:49.346104264
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/ber_decoder.o: src/mms/iso_mms/asn1c/ber_decoder.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ber_decoder'
+#  Last modified 2022-08-22 12:16:46.230043222
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/asn1c/GetVariableAccessAttributesResponse.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/NULL.o: src/mms/iso_mms/asn1c/NULL.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/NULL'
+#  Last modified 2022-08-22 12:16:48.054078952
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/client/mms_client_named_variable_list.o: src/mms/iso_mms/client/mms_client_named_variable_list.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/client/mms_client_named_variable_list'
+#  Last modified 2022-08-22 12:16:45.410027161
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/server/mms_journal_service.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/iec61850/server/impl/client_connection.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.052897813
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/ListOfVariableSeq.o: src/mms/iso_mms/asn1c/ListOfVariableSeq.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ListOfVariableSeq'
+#  Last modified 2022-08-22 12:16:47.866075269
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_server/iso_server.o: src/mms/iso_server/iso_server.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_server/iso_server'
+#  Last modified 2022-08-22 12:16:49.45410638
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/asn1c/Integer8.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/asn1c/FloatingPoint.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/asn1c/UtcTime.c:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/common/mms_common_msg.o: src/mms/iso_mms/common/mms_common_msg.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/common/mms_common_msg'
+#  Last modified 2022-08-22 12:16:45.742033663
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/asn1c/AlternateAccess.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
+
+build/hal/filesystem/linux/file_provider_linux.o: hal/filesystem/linux/file_provider_linux.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'hal/filesystem/linux/file_provider_linux'
+#  Last modified 2022-08-22 12:16:51.618148782
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/ReadResponse.o: src/mms/iso_mms/asn1c/ReadResponse.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ReadResponse'
+#  Last modified 2022-08-22 12:16:48.482087337
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/Address.o: src/mms/iso_mms/asn1c/Address.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/Address'
+#  Last modified 2022-08-22 12:16:46.018039069
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/InitiateResponsePdu.o: src/mms/iso_mms/asn1c/InitiateResponsePdu.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/InitiateResponsePdu'
+#  Last modified 2022-08-22 12:16:47.642070881
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/TimeOfDay.o: src/mms/iso_mms/asn1c/TimeOfDay.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/TimeOfDay'
+#  Last modified 2022-08-22 12:16:48.686091334
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/common/mms_type_spec.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/asn1c/InitResponseDetail.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/InformationReport.o: src/mms/iso_mms/asn1c/InformationReport.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/InformationReport'
+#  Last modified 2022-08-22 12:16:47.578069627
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/asn1c/VariableSpecification.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/asn1c/asn_SEQUENCE_OF.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/client/mms_client_get_var_access.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
+
+build/src/common/mem_alloc_linked_list.o: src/common/mem_alloc_linked_list.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/common/mem_alloc_linked_list'
+#  Last modified 2022-08-22 12:16:43.361987052
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/asn1c/ObjectName.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/goose/goose_publisher.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.048897734
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/xer_decoder.o: src/mms/iso_mms/asn1c/xer_decoder.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/xer_decoder'
+#  Last modified 2022-08-22 12:16:49.262102618
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/iec61850/server/mms_mapping/reporting.o: src/iec61850/server/mms_mapping/reporting.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/server/mms_mapping/reporting'
+#  Last modified 2022-08-22 12:16:51.262141806
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_common/iso_connection_parameters.o: src/mms/iso_common/iso_connection_parameters.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_common/iso_connection_parameters'
+#  Last modified 2022-08-22 12:16:45.662032097
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/asn1c/UnconfirmedService.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/server/mms_association_service.o: src/mms/iso_mms/server/mms_association_service.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_association_service'
+#  Last modified 2022-08-22 12:16:43.82199606
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/server/mms_domain.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/asn1c/ConfirmedResponsePdu.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/Integer16.o: src/mms/iso_mms/asn1c/Integer16.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/Integer16'
+#  Last modified 2022-08-22 12:16:47.714072291
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/asn1c/ConfirmedErrorPDU.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/asn1c/TypeSpecification.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/Unsigned16.o: src/mms/iso_mms/asn1c/Unsigned16.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/Unsigned16'
+#  Last modified 2022-08-22 12:16:48.858094703
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/server/mms_device.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/goose/goose_receiver.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.048897734
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/iec61850/client/client_report.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.048897734
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/server/mms_server_common.o: src/mms/iso_mms/server/mms_server_common.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_server_common'
+#  Last modified 2022-08-22 12:16:44.682012903
+#  File has been updated.
+#  Successfully updated.
+ 
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/client/mms_client_write.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/server/mms_read_service.o: src/mms/iso_mms/server/mms_read_service.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_read_service'
+#  Last modified 2022-08-22 12:16:44.558010474
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/asn1c/InitiateErrorPdu.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/asn1c/DefineNamedVariableListResponse.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/OCTET_STRING.o: src/mms/iso_mms/asn1c/OCTET_STRING.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/OCTET_STRING'
+#  Last modified 2022-08-22 12:16:48.198081773
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/asn1c/DeleteNamedVariableListRequest.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/Unsigned32.o: src/mms/iso_mms/asn1c/Unsigned32.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/Unsigned32'
+#  Last modified 2022-08-22 12:16:48.886095252
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/server/mms_association_service.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 Makefile:
@@ -622,114 +1218,383 @@ Makefile:
 #  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/client/mms_client_get_var_access.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/ConcludeResponsePDU.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/WriteResponse.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/OCTET_STRING.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/client/mms_client_get_var_access.o: src/mms/iso_mms/client/mms_client_get_var_access.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/client/mms_client_get_var_access'
+#  Last modified 2022-08-22 12:16:45.250024027
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/sampled_values/sv_publisher.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/WriteResponse.o: src/mms/iso_mms/asn1c/WriteResponse.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/WriteResponse'
+#  Last modified 2022-08-22 12:16:49.198101364
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+hal/thread/linux/thread_linux.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-10 14:08:15
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/server/mms_read_service.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
 
 lib: build/libiec61850.a
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/10=0%
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/server/mms_value_cache.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/ListOfVariableSeq.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/DataSequence.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/VariableAccessSpecification.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/server/mms_value_cache.o: src/mms/iso_mms/server/mms_value_cache.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_value_cache'
+#  Last modified 2022-08-22 12:16:44.850016193
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/VisibleString.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/server/mms_get_namelist_service.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/DataSequence.o: src/mms/iso_mms/asn1c/DataSequence.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/DataSequence'
+#  Last modified 2022-08-22 12:16:47.118060616
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/VisibleString.o: src/mms/iso_mms/asn1c/VisibleString.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/VisibleString'
+#  Last modified 2022-08-22 12:16:49.114099719
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/server/mms_identify_service.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/iec61850/server/mms_mapping/mms_goose.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.052897813
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/server/mms_identify_service.o: src/mms/iso_mms/server/mms_identify_service.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_identify_service'
+#  Last modified 2022-08-22 12:16:44.214003737
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_client/iso_client_connection.o: src/mms/iso_client/iso_client_connection.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_client/iso_client_connection'
+#  Last modified 2022-08-22 12:16:45.606031
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_client/iso_client_connection.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_server/iso_server.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/INTEGER.o: src/mms/iso_mms/asn1c/INTEGER.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/INTEGER'
+#  Last modified 2022-08-22 12:16:47.838074721
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/INTEGER.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/server/mms_named_variable_list_service.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/ParameterSupportOptions.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_presentation/iso_presentation.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/constr_SEQUENCE_OF.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/xer_decoder.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/client/mms_client_connection.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/server/mms_get_var_access_service.c:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/logging/log_storage.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/ObjectClass.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/ParameterSupportOptions.o: src/mms/iso_mms/asn1c/ParameterSupportOptions.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ParameterSupportOptions'
+#  Last modified 2022-08-22 12:16:48.250082792
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/constr_SEQUENCE_OF.o: src/mms/iso_mms/asn1c/constr_SEQUENCE_OF.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/constr_SEQUENCE_OF'
+#  Last modified 2022-08-22 12:16:46.894056228
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/ConfirmedServiceResponse.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/MMSString.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/iec61850/server/mms_mapping/mms_sv.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/xer_encoder.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/client/mms_client_connection.o: src/mms/iso_mms/client/mms_client_connection.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/client/mms_client_connection'
+#  Last modified 2022-08-22 12:16:45.118021442
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/logging/log_storage.o: src/logging/log_storage.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/logging/log_storage'
+#  Last modified 2022-08-22 12:16:49.47810685
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/ConfirmedServiceResponse.o: src/mms/iso_mms/asn1c/ConfirmedServiceResponse.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ConfirmedServiceResponse'
+#  Last modified 2022-08-22 12:16:46.634051135
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/iec61850/server/mms_mapping/mms_sv.o: src/iec61850/server/mms_mapping/mms_sv.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/server/mms_mapping/mms_sv'
+#  Last modified 2022-08-22 12:16:51.094138514
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/client/mms_client_status.o: src/mms/iso_mms/client/mms_client_status.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/client/mms_client_status'
+#  Last modified 2022-08-22 12:16:45.502028963
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/client/mms_client_status.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/iec61850/server/model/config_file_parser.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.052897813
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/iec61850/server/mms_mapping/mms_goose.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/common/map.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.044897654
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/sampled_values/sv_publisher.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/goose/goose_subscriber.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.048897734
+#  File has been updated.
+#  Successfully updated.
+
+build/src/iec61850/server/mms_mapping/mms_goose.o: src/iec61850/server/mms_mapping/mms_goose.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/server/mms_mapping/mms_goose'
+#  Last modified 2022-08-22 12:16:50.870134125
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/server/mms_server.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/asn1c/ServiceSupportOptions.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/asn1c/MmsPdu.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/asn1c/Unsigned16.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
+
+build/src/sampled_values/sv_publisher.o: src/sampled_values/sv_publisher.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/sampled_values/sv_publisher'
+#  Last modified 2022-08-22 12:16:49.670110612
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 static_checks: lib
 #  Implicit rule search has not been done.
@@ -738,41 +1603,84 @@ static_checks: lib
 #  recipe to execute (from 'Makefile', line 154):
 	splint -preproc +posixlib +skip-sys-headers +gnuextensions $(LIB_INCLUDES) $(LIB_SOURCES)
 
-# Not a target:
-build/src/mms/iso_mms/asn1c/ber_tlv_length.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/mms/iso_mms/asn1c/ber_tlv_length.o: src/mms/iso_mms/asn1c/ber_tlv_length.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ber_tlv_length'
+#  Last modified 2022-08-22 12:16:46.25804377
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/server/mms_status_service.o: src/mms/iso_mms/server/mms_status_service.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_status_service'
+#  Last modified 2022-08-22 12:16:44.802015253
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/InitiateRequestPdu.o: src/mms/iso_mms/asn1c/InitiateRequestPdu.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/InitiateRequestPdu'
+#  Last modified 2022-08-22 12:16:47.626070568
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/server/mms_status_service.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/server/mms_status_service.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
 
-# Not a target:
-build/src/mms/iso_mms/asn1c/InitiateRequestPdu.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/common/byte_buffer.o: src/common/byte_buffer.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/common/byte_buffer'
+#  Last modified 2022-08-22 12:16:43.261985094
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
-# Not a target:
-build/src/common/byte_buffer.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/common/simple_allocator.o: src/common/simple_allocator.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/common/simple_allocator'
+#  Last modified 2022-08-22 12:16:43.409987992
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
-# Not a target:
-build/src/common/simple_allocator.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_server/iso_connection.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/mms/iso_server/iso_connection.o: src/mms/iso_server/iso_connection.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_server/iso_connection'
+#  Last modified 2022-08-22 12:16:49.38210497
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 clean:
 #  Implicit rule search has not been done.
@@ -783,173 +1691,503 @@ clean:
 	rm -rf $(LIB_OBJS_DIR)
 
 # Not a target:
-build/src/iec61850/server/impl/ied_server_config.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/server/mms_server_common.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/common/mms_value.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_cotp/cotp.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
+
+build/src/iec61850/server/impl/ied_server_config.o: src/iec61850/server/impl/ied_server_config.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/server/impl/ied_server_config'
+#  Last modified 2022-08-22 12:16:51.418144863
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/common/mms_value.o: src/mms/iso_mms/common/mms_value.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/common/mms_value'
+#  Last modified 2022-08-22 12:16:45.954037816
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/common/string_utilities.o: src/common/string_utilities.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/common/string_utilities'
+#  Last modified 2022-08-22 12:16:43.501989794
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/common/string_utilities.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/AccessResult.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/server/mms_named_variable_list.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/UnconfirmedService.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/iec61850/client/client_report.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_cotp/cotp.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/server/mms_journal_service.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_session/iso_session.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/GetNamedVariableListAttributesResponse.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/per_decoder.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/FloatingPoint.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/UtcTime.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/iec61850/server/mms_mapping/control.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
  
-#  File has not been updated.
+src/mms/iso_mms/asn1c/GeneralizedTime.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/common/mms_type_spec.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/BIT_STRING.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/ConcludeResponsePDU.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/DataSequence.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/AccessResult.o: src/mms/iso_mms/asn1c/AccessResult.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/AccessResult'
+#  Last modified 2022-08-22 12:16:45.978038286
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/iec61850/client/client_sv_control.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/UnconfirmedPDU.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/server/mms_named_variable_list.o: src/mms/iso_mms/server/mms_named_variable_list.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_named_variable_list'
+#  Last modified 2022-08-22 12:16:44.406007497
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/UnconfirmedService.o: src/mms/iso_mms/asn1c/UnconfirmedService.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/UnconfirmedService'
+#  Last modified 2022-08-22 12:16:48.802093606
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/BIT_STRING.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/Integer16.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
+
+build/src/iec61850/client/client_report.o: src/iec61850/client/client_report.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/client/client_report'
+#  Last modified 2022-08-22 12:16:49.958116255
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/ServiceSupportOptions.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/iec61850/server/impl/ied_server.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.052897813
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/iec61850/server/impl/ied_server.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+hal/socket/linux/socket_linux.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-10 14:08:15
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_cotp/cotp.o: src/mms/iso_cotp/cotp.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_cotp/cotp'
+#  Last modified 2022-08-22 12:16:43.717994024
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/hal/thread/linux/thread_linux.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/common/mms_common_msg.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/asn_codecs_prim.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/iec61850/server/mms_mapping/mms_mapping.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.052897813
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/server/mms_journal_service.o: src/mms/iso_mms/server/mms_journal_service.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_journal_service'
+#  Last modified 2022-08-22 12:16:44.354006479
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_session/iso_session.o: src/mms/iso_session/iso_session.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_session/iso_session'
+#  Last modified 2022-08-22 12:16:43.22198431
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/GetNamedVariableListAttributesResponse.o: src/mms/iso_mms/asn1c/GetNamedVariableListAttributesResponse.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/GetNamedVariableListAttributesResponse'
+#  Last modified 2022-08-22 12:16:47.406066258
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/per_decoder.o: src/mms/iso_mms/asn1c/per_decoder.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/per_decoder'
+#  Last modified 2022-08-22 12:16:48.274083262
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/ScatteredAccessDescription.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/asn1/ber_encoder.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.056897893
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/FloatingPoint.o: src/mms/iso_mms/asn1c/FloatingPoint.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/FloatingPoint'
+#  Last modified 2022-08-22 12:16:47.290063986
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/iec61850/server/mms_mapping/logging.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/common/string_utilities.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.044897654
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/StructComponent.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/Data.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/UtcTime.o: src/mms/iso_mms/asn1c/UtcTime.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/UtcTime'
+#  Last modified 2022-08-22 12:16:48.974096976
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/iec61850/server/mms_mapping/control.o: src/iec61850/server/mms_mapping/control.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/server/mms_mapping/control'
+#  Last modified 2022-08-22 12:16:50.71013099
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/common/mms_type_spec.o: src/mms/iso_mms/common/mms_type_spec.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/common/mms_type_spec'
+#  Last modified 2022-08-22 12:16:45.814035074
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/ConcludeResponsePDU.o: src/mms/iso_mms/asn1c/ConcludeResponsePDU.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ConcludeResponsePDU'
+#  Last modified 2022-08-22 12:16:46.458047688
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/iec61850/client/client_sv_control.o: src/iec61850/client/client_sv_control.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/client/client_sv_control'
+#  Last modified 2022-08-22 12:16:50.070118449
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/GeneralizedTime.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/DefineNamedVariableListRequest.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/BIT_STRING.o: src/mms/iso_mms/asn1c/BIT_STRING.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/BIT_STRING'
+#  Last modified 2022-08-22 12:16:46.346045494
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/ServiceSupportOptions.o: src/mms/iso_mms/asn1c/ServiceSupportOptions.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ServiceSupportOptions'
+ 
+#  Last modified 2022-08-22 12:16:48.634090315
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/iec61850/server/impl/ied_server.o: src/iec61850/server/impl/ied_server.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/server/impl/ied_server'
+#  Last modified 2022-08-22 12:16:51.386144236
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/client/mms_client_common.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/iec61850/server/mms_mapping/logging.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.052897813
+#  File has been updated.
+#  Successfully updated.
+
+build/hal/thread/linux/thread_linux.o: hal/thread/linux/thread_linux.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'hal/thread/linux/thread_linux'
+#  Last modified 2022-08-22 12:16:51.52614698
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/iec61850/client/client_report_control.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.048897734
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/asn_codecs_prim.o: src/mms/iso_mms/asn1c/asn_codecs_prim.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/asn_codecs_prim'
+#  Last modified 2022-08-22 12:16:46.122041106
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/client/mms_client_journals.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/ScatteredAccessDescription.o: src/mms/iso_mms/asn1c/ScatteredAccessDescription.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ScatteredAccessDescription'
+#  Last modified 2022-08-22 12:16:48.562088904
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/asn1c/ConcludeRequestPDU.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
+
+build/src/iec61850/server/mms_mapping/logging.o: src/iec61850/server/mms_mapping/logging.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/server/mms_mapping/logging'
+#  Last modified 2022-08-22 12:16:50.802132793
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/StructComponent.o: src/mms/iso_mms/asn1c/StructComponent.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/StructComponent'
+#  Last modified 2022-08-22 12:16:48.654090707
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/asn1c/ServiceError.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/server/mms_value_cache.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/GeneralizedTime.o: src/mms/iso_mms/asn1c/GeneralizedTime.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/GeneralizedTime'
+#  Last modified 2022-08-22 12:16:47.334064847
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/asn1c/DeleteNamedVariableListResponse.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/asn1c/asn_SET_OF.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/client/mms_client_common.o: src/mms/iso_mms/client/mms_client_common.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/client/mms_client_common'
+#  Last modified 2022-08-22 12:16:44.962018386
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
 config:
@@ -959,64 +2197,209 @@ config:
 #  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/server/mms_get_var_access_service.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/TimeOfDay.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/server/mms_get_var_access_service.o: src/mms/iso_mms/server/mms_get_var_access_service.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_get_var_access_service'
+#  Last modified 2022-08-22 12:16:44.150002484
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/GetNamedVariableListAttributesRequest.o: src/mms/iso_mms/asn1c/GetNamedVariableListAttributesRequest.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/GetNamedVariableListAttributesRequest'
+#  Last modified 2022-08-22 12:16:47.390065944
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/GetNamedVariableListAttributesRequest.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_common/iso_connection_parameters.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/iec61850/client/client_goose_control.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/AlternateAccessSelection.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
+
+build/src/iec61850/client/client_goose_control.o: src/iec61850/client/client_goose_control.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/client/client_goose_control'
+#  Last modified 2022-08-22 12:16:49.874114609
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/MmsPdu.o: src/mms/iso_mms/asn1c/MmsPdu.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/MmsPdu'
+#  Last modified 2022-08-22 12:16:47.898075896
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/MmsPdu.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/InitRequestDetail.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/VariableSpecification.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+hal/time/unix/time.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-10 14:08:15
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/client/mms_client_journals.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/iec61850/client/client_sv_control.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.048897734
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/VariableSpecification.o: src/mms/iso_mms/asn1c/VariableSpecification.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/VariableSpecification'
+#  Last modified 2022-08-22 12:16:49.090099248
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/client/mms_client_journals.o: src/mms/iso_mms/client/mms_client_journals.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/client/mms_client_journals'
+#  Last modified 2022-08-22 12:16:45.362026221
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/iec61850/server/model/model.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/InformationReport.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/common/buffer_chain.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/iec61850/client/client_goose_control.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.048897734
+#  File has been updated.
+ 
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/ConfirmedErrorPDU.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/InitiateRequestPdu.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/ConcludeRequestPDU.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/ConfirmedServiceResponse.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
+
+build/src/iec61850/server/model/model.o: src/iec61850/server/model/model.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/server/model/model'
+#  Last modified 2022-08-22 12:16:50.590128639
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_server/iso_connection.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
+
+build/src/common/buffer_chain.o: src/common/buffer_chain.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/common/buffer_chain'
+#  Last modified 2022-08-22 12:16:43.241984702
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/ConfirmedErrorPDU.o: src/mms/iso_mms/asn1c/ConfirmedErrorPDU.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ConfirmedErrorPDU'
+#  Last modified 2022-08-22 12:16:46.482048158
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/ConcludeRequestPDU.o: src/mms/iso_mms/asn1c/ConcludeRequestPDU.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ConcludeRequestPDU'
+#  Last modified 2022-08-22 12:16:46.430047139
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/common/mem_alloc_linked_list.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.044897654
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 .DEFAULT:
@@ -1024,50 +2407,175 @@ build/src/mms/iso_mms/asn1c/ConcludeRequestPDU.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-build/src/mms/iso_mms/asn1c/GetNameListResponse.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/mms/iso_mms/asn1c/GetNameListResponse.o: src/mms/iso_mms/asn1c/GetNameListResponse.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/GetNameListResponse'
+#  Last modified 2022-08-22 12:16:47.446067041
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/asn_SEQUENCE_OF.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/Address.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/asn1c/constr_SET_OF.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/common/linked_list.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.044897654
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/logging/log_storage.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.056897893
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/asn_SEQUENCE_OF.o: src/mms/iso_mms/asn1c/asn_SEQUENCE_OF.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/asn_SEQUENCE_OF'
+#  Last modified 2022-08-22 12:16:46.170042047
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/common/mms_value.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/server/mms_information_report.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/client/mms_client_get_namelist.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
 
 all: lib
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/10=0%
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/asn_SET_OF.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/NativeEnumerated.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/asn_SET_OF.o: src/mms/iso_mms/asn1c/asn_SET_OF.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/asn_SET_OF'
+#  Last modified 2022-08-22 12:16:46.198042595
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/Integer8.o: src/mms/iso_mms/asn1c/Integer8.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/Integer8'
+#  Last modified 2022-08-22 12:16:47.798073937
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/Integer8.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/per_encoder.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/InitResponseDetail.o: src/mms/iso_mms/asn1c/InitResponseDetail.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/InitResponseDetail'
+#  Last modified 2022-08-22 12:16:47.686071743
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/WriteRequest.o: src/mms/iso_mms/asn1c/WriteRequest.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/WriteRequest'
+#  Last modified 2022-08-22 12:16:49.158100581
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/InitResponseDetail.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/GetNameListResponse.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/WriteRequest.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/sampled_values/sv_subscriber.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/iec61850/server/impl/ied_server_config.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.052897813
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/client/mms_client_identify.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
 
 examples:
 #  Phony target (prerequisite of .PHONY).
@@ -1077,29 +2585,89 @@ examples:
 #  recipe to execute (from 'Makefile', line 168):
 	cd examples; $(MAKE)
 
-# Not a target:
-build/src/iec61850/client/client_report_control.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/iec61850/client/client_report_control.o: src/iec61850/client/client_report_control.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/client/client_report_control'
+#  Last modified 2022-08-22 12:16:50.030117666
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/hal/memory/lib_memory.o: hal/memory/lib_memory.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'hal/memory/lib_memory'
+#  Last modified 2022-08-22 12:16:51.694150272
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/hal/memory/lib_memory.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/INTEGER.c:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/server/mms_named_variable_list_service.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/ber_decoder.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/client/mms_client_files.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/VisibleString.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/client/mms_client_common.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/server/mms_named_variable_list_service.o: src/mms/iso_mms/server/mms_named_variable_list_service.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_named_variable_list_service'
+#  Last modified 2022-08-22 12:16:44.462008594
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/client/mms_client_files.o: src/mms/iso_mms/client/mms_client_files.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/client/mms_client_files'
+#  Last modified 2022-08-22 12:16:45.174022539
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/client/mms_client_initiate.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 make/target_system.mk:
@@ -1108,30 +2676,19 @@ make/target_system.mk:
 #  File has been updated.
 #  Successfully updated.
 
+# Not a target:
+src/mms/iso_mms/asn1c/der_encoder.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
+
 build/src/mms/iso_acse/acse.o: src/mms/iso_acse/acse.c config
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'src/mms/iso_acse/acse'
-#  File does not exist.
+#  Last modified 2022-08-22 12:16:43.109982117
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := build/src/mms/iso_acse/acse.o
-# automatic
-# * := src/mms/iso_acse/acse
-# automatic
-# < := src/mms/iso_acse/acse.c
-# automatic
-# + := src/mms/iso_acse/acse.c config
-# automatic
-# % := 
-# automatic
-# ^ := src/mms/iso_acse/acse.c config
-# automatic
-# ? := src/mms/iso_acse/acse.c config
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=2/21=10%
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 178):
 	@echo compiling $(notdir $<)
 	$(SILENCE)mkdir -p $(dir $@)
@@ -1139,95 +2696,311 @@ build/src/mms/iso_acse/acse.o: src/mms/iso_acse/acse.c config
 	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/RejectPDU.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/IndexRangeSeq.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/RejectPDU.o: src/mms/iso_mms/asn1c/RejectPDU.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/RejectPDU'
+#  Last modified 2022-08-22 12:16:48.542088512
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/server/mms_access_result.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/UTF8String.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/iec61850/client/client_control.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/constr_TYPE.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/common/string_map.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/iec61850/server/model/dynamic_model.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.052897813
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/xer_encoder.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/ConfirmedRequestPdu.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/server/mms_access_result.o: src/mms/iso_mms/server/mms_access_result.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_access_result'
+#  Last modified 2022-08-22 12:16:43.781995277
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/iec61850/client/client_control.o: src/iec61850/client/client_control.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/client/client_control'
+#  Last modified 2022-08-22 12:16:49.79811312
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/server/mms_get_namelist_service.o:
+src/iec61850/server/model/cdc.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.052897813
+#  File has been updated.
+#  Successfully updated.
+
+build/src/common/string_map.o: src/common/string_map.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/common/string_map'
+#  Last modified 2022-08-22 12:16:43.449988775
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/xer_encoder.o: src/mms/iso_mms/asn1c/xer_encoder.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/xer_encoder'
+#  Last modified 2022-08-22 12:16:49.290103167
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/server/mms_write_service.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/asn1/ber_decode.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.056897893
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/server/mms_get_namelist_service.o: src/mms/iso_mms/server/mms_get_namelist_service.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_get_namelist_service'
+#  Last modified 2022-08-22 12:16:44.078001074
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/hal/time/unix/time.o: hal/time/unix/time.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'hal/time/unix/time'
+#  Last modified 2022-08-22 12:16:51.638149174
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/server/mms_file_service.o: src/mms/iso_mms/server/mms_file_service.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_file_service'
+#  Last modified 2022-08-22 12:16:44.030000133
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/asn1c/GetNamedVariableListAttributesResponse.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/Identifier.o: src/mms/iso_mms/asn1c/Identifier.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/Identifier'
+#  Last modified 2022-08-22 12:16:47.518068452
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/iec61850/common/iec61850_common.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.048897734
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/UTF8String.o: src/mms/iso_mms/asn1c/UTF8String.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/UTF8String'
+#  Last modified 2022-08-22 12:16:49.006097603
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/server/mms_device.o: src/mms/iso_mms/server/mms_device.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_device'
+#  Last modified 2022-08-22 12:16:43.885997313
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/iec61850/client/ied_connection.o: src/iec61850/client/ied_connection.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/client/ied_connection'
+#  Last modified 2022-08-22 12:16:50.206121114
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/common/string_map.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.044897654
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/asn1c/constr_SEQUENCE_OF.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/asn1c/constraints.c:
+#  Implicit rule search has been done.
  
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/hal/time/unix/time.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/Unsigned8.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/server/mms_file_service.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/RejectPDU.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/constr_SEQUENCE.o: src/mms/iso_mms/asn1c/constr_SEQUENCE.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/constr_SEQUENCE'
+#  Last modified 2022-08-22 12:16:46.826054896
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/client/mms_client_get_namelist.o: src/mms/iso_mms/client/mms_client_get_namelist.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/client/mms_client_get_namelist'
+#  Last modified 2022-08-22 12:16:45.2180234
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/Identifier.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/asn1/asn1_ber_primitive_value.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.056897893
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/ObjectClass.o: src/mms/iso_mms/asn1c/ObjectClass.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ObjectClass'
+#  Last modified 2022-08-22 12:16:48.074079344
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/UTF8String.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/ReadResponse.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/server/mms_device.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/iec61850/client/ied_connection.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/constr_SEQUENCE.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/client/mms_client_get_namelist.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/ObjectClass.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/iec61850/server/mms_mapping/reporting.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.052897813
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 src/mms/iso_acse/acse.c:
@@ -1237,16 +3010,42 @@ src/mms/iso_acse/acse.c:
 #  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/AlternateAccessSelection.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/server/mms_file_service.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/per_support.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/xer_support.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/AlternateAccessSelection.o: src/mms/iso_mms/asn1c/AlternateAccessSelection.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/AlternateAccessSelection'
+#  Last modified 2022-08-22 12:16:46.086040401
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/per_support.o: src/mms/iso_mms/asn1c/per_support.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/per_support'
+#  Last modified 2022-08-22 12:16:48.398085691
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 build/libiec61850.so: build/src/mms/iso_acse/acse.o build/src/mms/iso_presentation/iso_presentation.o build/src/mms/iso_session/iso_session.o build/src/common/buffer_chain.o build/src/common/byte_buffer.o build/src/common/conversions.o build/src/common/linked_list.o build/src/common/map.o build/src/common/mem_alloc_linked_list.o build/src/common/simple_allocator.o build/src/common/string_map.o build/src/common/string_utilities.o build/src/mms/asn1/asn1_ber_primitive_value.o build/src/mms/asn1/ber_decode.o build/src/mms/asn1/ber_encoder.o build/src/mms/asn1/ber_integer.o build/src/mms/iso_cotp/cotp.o build/src/mms/iso_mms/server/mms_access_result.o build/src/mms/iso_mms/server/mms_association_service.o build/src/mms/iso_mms/server/mms_device.o build/src/mms/iso_mms/server/mms_domain.o build/src/mms/iso_mms/server/mms_file_service.o build/src/mms/iso_mms/server/mms_get_namelist_service.o build/src/mms/iso_mms/server/mms_get_var_access_service.o build/src/mms/iso_mms/server/mms_identify_service.o build/src/mms/iso_mms/server/mms_information_report.o build/src/mms/iso_mms/server/mms_journal.o build/src/mms/iso_mms/server/mms_journal_service.o build/src/mms/iso_mms/server/mms_named_variable_list.o build/src/mms/iso_mms/server/mms_named_variable_list_service.o build/src/mms/iso_mms/server/mms_read_service.o build/src/mms/iso_mms/server/mms_server.o build/src/mms/iso_mms/server/mms_server_common.o build/src/mms/iso_mms/server/mms_server_connection.o build/src/mms/iso_mms/server/mms_status_service.o build/src/mms/iso_mms/server/mms_value_cache.o build/src/mms/iso_mms/server/mms_write_service.o build/src/mms/iso_mms/client/mms_client_common.o build/src/mms/iso_mms/client/mms_client_connection.o build/src/mms/iso_mms/client/mms_client_files.o build/src/mms/iso_mms/client/mms_client_get_namelist.o build/src/mms/iso_mms/client/mms_client_get_var_access.o build/src/mms/iso_mms/client/mms_client_identify.o build/src/mms/iso_mms/client/mms_client_initiate.o build/src/mms/iso_mms/client/mms_client_journals.o build/src/mms/iso_mms/client/mms_client_named_variable_list.o build/src/mms/iso_mms/client/mms_client_read.o build/src/mms/iso_mms/client/mms_client_status.o build/src/mms/iso_mms/client/mms_client_write.o build/src/mms/iso_client/iso_client_connection.o build/src/mms/iso_common/iso_connection_parameters.o build/src/mms/iso_mms/common/mms_common_msg.o build/src/mms/iso_mms/common/mms_type_spec.o build/src/mms/iso_mms/common/mms_value.o build/src/mms/iso_mms/asn1c/AccessResult.o build/src/mms/iso_mms/asn1c/Address.o build/src/mms/iso_mms/asn1c/AlternateAccess.o build/src/mms/iso_mms/asn1c/AlternateAccessSelection.o build/src/mms/iso_mms/asn1c/BIT_STRING.o build/src/mms/iso_mms/asn1c/BOOLEAN.o build/src/mms/iso_mms/asn1c/ConcludeRequestPDU.o build/src/mms/iso_mms/asn1c/ConcludeResponsePDU.o build/src/mms/iso_mms/asn1c/ConfirmedErrorPDU.o build/src/mms/iso_mms/asn1c/ConfirmedRequestPdu.o build/src/mms/iso_mms/asn1c/ConfirmedResponsePdu.o build/src/mms/iso_mms/asn1c/ConfirmedServiceRequest.o build/src/mms/iso_mms/asn1c/ConfirmedServiceResponse.o build/src/mms/iso_mms/asn1c/Data.o build/src/mms/iso_mms/asn1c/DataAccessError.o build/src/mms/iso_mms/asn1c/DataSequence.o build/src/mms/iso_mms/asn1c/DefineNamedVariableListRequest.o build/src/mms/iso_mms/asn1c/DefineNamedVariableListResponse.o build/src/mms/iso_mms/asn1c/DeleteNamedVariableListRequest.o build/src/mms/iso_mms/asn1c/DeleteNamedVariableListResponse.o build/src/mms/iso_mms/asn1c/FloatingPoint.o build/src/mms/iso_mms/asn1c/GeneralizedTime.o build/src/mms/iso_mms/asn1c/GetNameListRequest.o build/src/mms/iso_mms/asn1c/GetNameListResponse.o build/src/mms/iso_mms/asn1c/GetNamedVariableListAttributesRequest.o build/src/mms/iso_mms/asn1c/GetNamedVariableListAttributesResponse.o build/src/mms/iso_mms/asn1c/GetVariableAccessAttributesRequest.o build/src/mms/iso_mms/asn1c/GetVariableAccessAttributesResponse.o build/src/mms/iso_mms/asn1c/INTEGER.o build/src/mms/iso_mms/asn1c/Identifier.o build/src/mms/iso_mms/asn1c/IndexRangeSeq.o build/src/mms/iso_mms/asn1c/InformationReport.o build/src/mms/iso_mms/asn1c/InitRequestDetail.o build/src/mms/iso_mms/asn1c/InitResponseDetail.o build/src/mms/iso_mms/asn1c/InitiateErrorPdu.o build/src/mms/iso_mms/asn1c/InitiateRequestPdu.o build/src/mms/iso_mms/asn1c/InitiateResponsePdu.o build/src/mms/iso_mms/asn1c/Integer16.o build/src/mms/iso_mms/asn1c/Integer32.o build/src/mms/iso_mms/asn1c/Integer8.o build/src/mms/iso_mms/asn1c/ListOfVariableSeq.o build/src/mms/iso_mms/asn1c/MMSString.o build/src/mms/iso_mms/asn1c/MmsPdu.o build/src/mms/iso_mms/asn1c/NULL.o build/src/mms/iso_mms/asn1c/NativeEnumerated.o build/src/mms/iso_mms/asn1c/NativeInteger.o build/src/mms/iso_mms/asn1c/OCTET_STRING.o build/src/mms/iso_mms/asn1c/ObjectClass.o build/src/mms/iso_mms/asn1c/ObjectName.o build/src/mms/iso_mms/asn1c/ParameterSupportOptions.o build/src/mms/iso_mms/asn1c/ReadRequest.o build/src/mms/iso_mms/asn1c/ReadResponse.o build/src/mms/iso_mms/asn1c/RejectPDU.o build/src/mms/iso_mms/asn1c/ScatteredAccessDescription.o build/src/mms/iso_mms/asn1c/ServiceError.o build/src/mms/iso_mms/asn1c/ServiceSupportOptions.o build/src/mms/iso_mms/asn1c/StructComponent.o build/src/mms/iso_mms/asn1c/TimeOfDay.o build/src/mms/iso_mms/asn1c/TypeSpecification.o build/src/mms/iso_mms/asn1c/UTF8String.o build/src/mms/iso_mms/asn1c/UnconfirmedPDU.o build/src/mms/iso_mms/asn1c/UnconfirmedService.o build/src/mms/iso_mms/asn1c/Unsigned16.o build/src/mms/iso_mms/asn1c/Unsigned32.o build/src/mms/iso_mms/asn1c/Unsigned8.o build/src/mms/iso_mms/asn1c/UtcTime.o build/src/mms/iso_mms/asn1c/VariableAccessSpecification.o build/src/mms/iso_mms/asn1c/VariableSpecification.o build/src/mms/iso_mms/asn1c/VisibleString.o build/src/mms/iso_mms/asn1c/WriteRequest.o build/src/mms/iso_mms/asn1c/WriteResponse.o build/src/mms/iso_mms/asn1c/asn_SEQUENCE_OF.o build/src/mms/iso_mms/asn1c/asn_SET_OF.o build/src/mms/iso_mms/asn1c/asn_codecs_prim.o build/src/mms/iso_mms/asn1c/ber_decoder.o build/src/mms/iso_mms/asn1c/ber_tlv_length.o build/src/mms/iso_mms/asn1c/ber_tlv_tag.o build/src/mms/iso_mms/asn1c/constr_CHOICE.o build/src/mms/iso_mms/asn1c/constr_SEQUENCE.o build/src/mms/iso_mms/asn1c/constr_SEQUENCE_OF.o build/src/mms/iso_mms/asn1c/constr_SET_OF.o build/src/mms/iso_mms/asn1c/constr_TYPE.o build/src/mms/iso_mms/asn1c/constraints.o build/src/mms/iso_mms/asn1c/der_encoder.o build/src/mms/iso_mms/asn1c/per_decoder.o build/src/mms/iso_mms/asn1c/per_encoder.o build/src/mms/iso_mms/asn1c/per_support.o build/src/mms/iso_mms/asn1c/xer_decoder.o build/src/mms/iso_mms/asn1c/xer_encoder.o build/src/mms/iso_mms/asn1c/xer_support.o build/src/mms/iso_server/iso_connection.o build/src/mms/iso_server/iso_server.o build/src/logging/log_storage.o build/src/goose/goose_publisher.o build/src/goose/goose_receiver.o build/src/goose/goose_subscriber.o build/src/sampled_values/sv_publisher.o build/src/sampled_values/sv_subscriber.o build/src/iec61850/client/client_control.o build/src/iec61850/client/client_goose_control.o build/src/iec61850/client/client_report.o build/src/iec61850/client/client_report_control.o build/src/iec61850/client/client_sv_control.o build/src/iec61850/client/ied_connection.o build/src/iec61850/common/iec61850_common.o build/src/iec61850/server/model/cdc.o build/src/iec61850/server/model/config_file_parser.o build/src/iec61850/server/model/dynamic_model.o build/src/iec61850/server/model/model.o build/src/iec61850/server/mms_mapping/control.o build/src/iec61850/server/mms_mapping/logging.o build/src/iec61850/server/mms_mapping/mms_goose.o build/src/iec61850/server/mms_mapping/mms_mapping.o build/src/iec61850/server/mms_mapping/mms_sv.o build/src/iec61850/server/mms_mapping/reporting.o build/src/iec61850/server/impl/client_connection.o build/src/iec61850/server/impl/ied_server.o build/src/iec61850/server/impl/ied_server_config.o build/hal/socket/linux/socket_linux.o build/hal/thread/linux/thread_linux.o build/hal/ethernet/linux/ethernet_linux.o build/hal/filesystem/linux/file_provider_linux.o build/hal/time/unix/time.o build/hal/serial/linux/serial_port_linux.o build/hal/memory/lib_memory.o
 #  Implicit rule search has not been done.
@@ -1255,17 +3054,43 @@ build/libiec61850.so: build/src/mms/iso_acse/acse.o build/src/mms/iso_presentati
 #  recipe to execute (from 'Makefile', line 175):
 	$(CC) $(LDFLAGS) $(DYNLIB_LDFLAGS) -shared -o $(DYN_LIB_NAME) $(LIB_OBJS) $(LDLIBS)
 
-# Not a target:
-build/src/mms/iso_mms/server/mms_domain.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/mms/iso_mms/server/mms_domain.o: src/mms/iso_mms/server/mms_domain.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_domain'
+#  Last modified 2022-08-22 12:16:43.921998018
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/hal/socket/linux/socket_linux.o: hal/socket/linux/socket_linux.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'hal/socket/linux/socket_linux'
+#  Last modified 2022-08-22 12:16:51.502146509
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/hal/socket/linux/socket_linux.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/server/mms_journal.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/mms/iso_mms/server/mms_server_connection.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
 
 install: build/libiec61850.a
 #  Implicit rule search has not been done.
@@ -1278,64 +3103,223 @@ install: build/libiec61850.a
 	cp $(LIB_NAME) $(INSTALL_PREFIX)/lib
 
 # Not a target:
-build/src/iec61850/server/model/config_file_parser.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+hal/memory/lib_memory.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-10 14:08:15
+#  File has been updated.
+#  Successfully updated.
+
+build/src/iec61850/server/model/config_file_parser.o: src/iec61850/server/model/config_file_parser.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/server/model/config_file_parser'
+#  Last modified 2022-08-22 12:16:50.454125974
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/InitRequestDetail.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/ScatteredAccessDescription.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/Unsigned8.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/iec61850/server/mms_mapping/mms_sv.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.052897813
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/NativeEnumerated.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/GetNamedVariableListAttributesRequest.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/InitRequestDetail.o: src/mms/iso_mms/asn1c/InitRequestDetail.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/InitRequestDetail'
+#  Last modified 2022-08-22 12:16:47.662071273
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/asn1/ber_integer.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/Identifier.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/client/mms_client_write.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_client/iso_client_connection.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.056897893
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/ServiceError.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/ParameterSupportOptions.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/Unsigned8.o: src/mms/iso_mms/asn1c/Unsigned8.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/Unsigned8'
+#  Last modified 2022-08-22 12:16:48.946096427
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/constr_CHOICE.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/client/mms_client_named_variable_list.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/asn1/ber_encoder.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/asn1/ber_integer.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.056897893
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/NativeEnumerated.o: src/mms/iso_mms/asn1c/NativeEnumerated.c config
+ 
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/NativeEnumerated'
+#  Last modified 2022-08-22 12:16:47.990077698
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/asn1/ber_integer.o: src/mms/asn1/ber_integer.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/asn1/ber_integer'
+#  Last modified 2022-08-22 12:16:43.669993084
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/ConfirmedResponsePdu.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/DataAccessError.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/client/mms_client_write.o: src/mms/iso_mms/client/mms_client_write.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/client/mms_client_write'
+#  Last modified 2022-08-22 12:16:45.546029825
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/ServiceError.o: src/mms/iso_mms/asn1c/ServiceError.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ServiceError'
+#  Last modified 2022-08-22 12:16:48.602089688
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/asn1c/per_decoder.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/constr_CHOICE.o: src/mms/iso_mms/asn1c/constr_CHOICE.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/constr_CHOICE'
+#  Last modified 2022-08-22 12:16:46.758053564
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/asn1c/constr_CHOICE.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/asn1/ber_encoder.o: src/mms/asn1/ber_encoder.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/asn1/ber_encoder'
+#  Last modified 2022-08-22 12:16:43.617992065
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/common/conversions.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.044897654
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/ConfirmedResponsePdu.o: src/mms/iso_mms/asn1c/ConfirmedResponsePdu.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ConfirmedResponsePdu'
+#  Last modified 2022-08-22 12:16:46.542049333
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+# Not a target:
+src/mms/iso_mms/asn1c/ConfirmedServiceRequest.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.060897973
+#  File has been updated.
+#  Successfully updated.
 
 cppcheck: lib
 #  Implicit rule search has not been done.
@@ -1345,97 +3329,235 @@ cppcheck: lib
 	cppcheck --force --std=c99 --enable=all $(LIB_INCLUDES) $(LIB_SOURCES) 2> cppcheck-output.xml
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/InitiateErrorPdu.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/server/mms_identify_service.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/InitiateErrorPdu.o: src/mms/iso_mms/asn1c/InitiateErrorPdu.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/InitiateErrorPdu'
+#  Last modified 2022-08-22 12:16:47.606070176
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/constr_TYPE.o: src/mms/iso_mms/asn1c/constr_TYPE.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/constr_TYPE'
+#  Last modified 2022-08-22 12:16:47.050059284
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/constr_SET_OF.o: src/mms/iso_mms/asn1c/constr_SET_OF.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/constr_SET_OF'
+#  Last modified 2022-08-22 12:16:47.002058344
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/hal/ethernet/linux/ethernet_linux.o: hal/ethernet/linux/ethernet_linux.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'hal/ethernet/linux/ethernet_linux'
+#  Last modified 2022-08-22 12:16:51.566147763
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/constr_TYPE.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/StructComponent.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/constr_SET_OF.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_session/iso_session.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/hal/ethernet/linux/ethernet_linux.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/iec61850/server/mms_mapping/control.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.052897813
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/server/mms_server_connection.o: src/mms/iso_mms/server/mms_server_connection.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_server_connection'
+#  Last modified 2022-08-22 12:16:44.738013999
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_presentation/iso_presentation.o: src/mms/iso_presentation/iso_presentation.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_presentation/iso_presentation'
+#  Last modified 2022-08-22 12:16:43.185983605
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/server/mms_server_connection.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/NULL.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/VariableAccessSpecification.o: src/mms/iso_mms/asn1c/VariableAccessSpecification.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/VariableAccessSpecification'
+#  Last modified 2022-08-22 12:16:49.046098386
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/MMSString.o: src/mms/iso_mms/asn1c/MMSString.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/MMSString'
+#  Last modified 2022-08-22 12:16:47.954076993
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_presentation/iso_presentation.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/common/byte_buffer.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.044897654
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/VariableAccessSpecification.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/WriteResponse.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/der_encoder.o: src/mms/iso_mms/asn1c/der_encoder.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/der_encoder'
+#  Last modified 2022-08-22 12:16:47.262063437
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/ReadRequest.o: src/mms/iso_mms/asn1c/ReadRequest.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ReadRequest'
+ 
+#  Last modified 2022-08-22 12:16:48.438086475
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/ber_tlv_tag.o: src/mms/iso_mms/asn1c/ber_tlv_tag.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ber_tlv_tag'
+#  Last modified 2022-08-22 12:16:46.314044867
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/MMSString.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/ber_tlv_tag.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
 
-# Not a target:
-build/src/mms/iso_mms/asn1c/der_encoder.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/common/map.o: src/common/map.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/common/map'
+#  Last modified 2022-08-22 12:16:43.337986582
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
-# Not a target:
-build/src/mms/iso_mms/asn1c/ReadRequest.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/mms/iso_mms/server/mms_write_service.o: src/mms/iso_mms/server/mms_write_service.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_write_service'
+#  Last modified 2022-08-22 12:16:44.922017603
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
-# Not a target:
-build/src/mms/iso_mms/asn1c/ber_tlv_tag.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/common/map.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/server/mms_write_service.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/server/mms_server.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/mms/iso_mms/server/mms_server.o: src/mms/iso_mms/server/mms_server.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_server'
+#  Last modified 2022-08-22 12:16:44.614011571
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 build/libiec61850.a: build/src/mms/iso_acse/acse.o build/src/mms/iso_presentation/iso_presentation.o build/src/mms/iso_session/iso_session.o build/src/common/buffer_chain.o build/src/common/byte_buffer.o build/src/common/conversions.o build/src/common/linked_list.o build/src/common/map.o build/src/common/mem_alloc_linked_list.o build/src/common/simple_allocator.o build/src/common/string_map.o build/src/common/string_utilities.o build/src/mms/asn1/asn1_ber_primitive_value.o build/src/mms/asn1/ber_decode.o build/src/mms/asn1/ber_encoder.o build/src/mms/asn1/ber_integer.o build/src/mms/iso_cotp/cotp.o build/src/mms/iso_mms/server/mms_access_result.o build/src/mms/iso_mms/server/mms_association_service.o build/src/mms/iso_mms/server/mms_device.o build/src/mms/iso_mms/server/mms_domain.o build/src/mms/iso_mms/server/mms_file_service.o build/src/mms/iso_mms/server/mms_get_namelist_service.o build/src/mms/iso_mms/server/mms_get_var_access_service.o build/src/mms/iso_mms/server/mms_identify_service.o build/src/mms/iso_mms/server/mms_information_report.o build/src/mms/iso_mms/server/mms_journal.o build/src/mms/iso_mms/server/mms_journal_service.o build/src/mms/iso_mms/server/mms_named_variable_list.o build/src/mms/iso_mms/server/mms_named_variable_list_service.o build/src/mms/iso_mms/server/mms_read_service.o build/src/mms/iso_mms/server/mms_server.o build/src/mms/iso_mms/server/mms_server_common.o build/src/mms/iso_mms/server/mms_server_connection.o build/src/mms/iso_mms/server/mms_status_service.o build/src/mms/iso_mms/server/mms_value_cache.o build/src/mms/iso_mms/server/mms_write_service.o build/src/mms/iso_mms/client/mms_client_common.o build/src/mms/iso_mms/client/mms_client_connection.o build/src/mms/iso_mms/client/mms_client_files.o build/src/mms/iso_mms/client/mms_client_get_namelist.o build/src/mms/iso_mms/client/mms_client_get_var_access.o build/src/mms/iso_mms/client/mms_client_identify.o build/src/mms/iso_mms/client/mms_client_initiate.o build/src/mms/iso_mms/client/mms_client_journals.o build/src/mms/iso_mms/client/mms_client_named_variable_list.o build/src/mms/iso_mms/client/mms_client_read.o build/src/mms/iso_mms/client/mms_client_status.o build/src/mms/iso_mms/client/mms_client_write.o build/src/mms/iso_client/iso_client_connection.o build/src/mms/iso_common/iso_connection_parameters.o build/src/mms/iso_mms/common/mms_common_msg.o build/src/mms/iso_mms/common/mms_type_spec.o build/src/mms/iso_mms/common/mms_value.o build/src/mms/iso_mms/asn1c/AccessResult.o build/src/mms/iso_mms/asn1c/Address.o build/src/mms/iso_mms/asn1c/AlternateAccess.o build/src/mms/iso_mms/asn1c/AlternateAccessSelection.o build/src/mms/iso_mms/asn1c/BIT_STRING.o build/src/mms/iso_mms/asn1c/BOOLEAN.o build/src/mms/iso_mms/asn1c/ConcludeRequestPDU.o build/src/mms/iso_mms/asn1c/ConcludeResponsePDU.o build/src/mms/iso_mms/asn1c/ConfirmedErrorPDU.o build/src/mms/iso_mms/asn1c/ConfirmedRequestPdu.o build/src/mms/iso_mms/asn1c/ConfirmedResponsePdu.o build/src/mms/iso_mms/asn1c/ConfirmedServiceRequest.o build/src/mms/iso_mms/asn1c/ConfirmedServiceResponse.o build/src/mms/iso_mms/asn1c/Data.o build/src/mms/iso_mms/asn1c/DataAccessError.o build/src/mms/iso_mms/asn1c/DataSequence.o build/src/mms/iso_mms/asn1c/DefineNamedVariableListRequest.o build/src/mms/iso_mms/asn1c/DefineNamedVariableListResponse.o build/src/mms/iso_mms/asn1c/DeleteNamedVariableListRequest.o build/src/mms/iso_mms/asn1c/DeleteNamedVariableListResponse.o build/src/mms/iso_mms/asn1c/FloatingPoint.o build/src/mms/iso_mms/asn1c/GeneralizedTime.o build/src/mms/iso_mms/asn1c/GetNameListRequest.o build/src/mms/iso_mms/asn1c/GetNameListResponse.o build/src/mms/iso_mms/asn1c/GetNamedVariableListAttributesRequest.o build/src/mms/iso_mms/asn1c/GetNamedVariableListAttributesResponse.o build/src/mms/iso_mms/asn1c/GetVariableAccessAttributesRequest.o build/src/mms/iso_mms/asn1c/GetVariableAccessAttributesResponse.o build/src/mms/iso_mms/asn1c/INTEGER.o build/src/mms/iso_mms/asn1c/Identifier.o build/src/mms/iso_mms/asn1c/IndexRangeSeq.o build/src/mms/iso_mms/asn1c/InformationReport.o build/src/mms/iso_mms/asn1c/InitRequestDetail.o build/src/mms/iso_mms/asn1c/InitResponseDetail.o build/src/mms/iso_mms/asn1c/InitiateErrorPdu.o build/src/mms/iso_mms/asn1c/InitiateRequestPdu.o build/src/mms/iso_mms/asn1c/InitiateResponsePdu.o build/src/mms/iso_mms/asn1c/Integer16.o build/src/mms/iso_mms/asn1c/Integer32.o build/src/mms/iso_mms/asn1c/Integer8.o build/src/mms/iso_mms/asn1c/ListOfVariableSeq.o build/src/mms/iso_mms/asn1c/MMSString.o build/src/mms/iso_mms/asn1c/MmsPdu.o build/src/mms/iso_mms/asn1c/NULL.o build/src/mms/iso_mms/asn1c/NativeEnumerated.o build/src/mms/iso_mms/asn1c/NativeInteger.o build/src/mms/iso_mms/asn1c/OCTET_STRING.o build/src/mms/iso_mms/asn1c/ObjectClass.o build/src/mms/iso_mms/asn1c/ObjectName.o build/src/mms/iso_mms/asn1c/ParameterSupportOptions.o build/src/mms/iso_mms/asn1c/ReadRequest.o build/src/mms/iso_mms/asn1c/ReadResponse.o build/src/mms/iso_mms/asn1c/RejectPDU.o build/src/mms/iso_mms/asn1c/ScatteredAccessDescription.o build/src/mms/iso_mms/asn1c/ServiceError.o build/src/mms/iso_mms/asn1c/ServiceSupportOptions.o build/src/mms/iso_mms/asn1c/StructComponent.o build/src/mms/iso_mms/asn1c/TimeOfDay.o build/src/mms/iso_mms/asn1c/TypeSpecification.o build/src/mms/iso_mms/asn1c/UTF8String.o build/src/mms/iso_mms/asn1c/UnconfirmedPDU.o build/src/mms/iso_mms/asn1c/UnconfirmedService.o build/src/mms/iso_mms/asn1c/Unsigned16.o build/src/mms/iso_mms/asn1c/Unsigned32.o build/src/mms/iso_mms/asn1c/Unsigned8.o build/src/mms/iso_mms/asn1c/UtcTime.o build/src/mms/iso_mms/asn1c/VariableAccessSpecification.o build/src/mms/iso_mms/asn1c/VariableSpecification.o build/src/mms/iso_mms/asn1c/VisibleString.o build/src/mms/iso_mms/asn1c/WriteRequest.o build/src/mms/iso_mms/asn1c/WriteResponse.o build/src/mms/iso_mms/asn1c/asn_SEQUENCE_OF.o build/src/mms/iso_mms/asn1c/asn_SET_OF.o build/src/mms/iso_mms/asn1c/asn_codecs_prim.o build/src/mms/iso_mms/asn1c/ber_decoder.o build/src/mms/iso_mms/asn1c/ber_tlv_length.o build/src/mms/iso_mms/asn1c/ber_tlv_tag.o build/src/mms/iso_mms/asn1c/constr_CHOICE.o build/src/mms/iso_mms/asn1c/constr_SEQUENCE.o build/src/mms/iso_mms/asn1c/constr_SEQUENCE_OF.o build/src/mms/iso_mms/asn1c/constr_SET_OF.o build/src/mms/iso_mms/asn1c/constr_TYPE.o build/src/mms/iso_mms/asn1c/constraints.o build/src/mms/iso_mms/asn1c/der_encoder.o build/src/mms/iso_mms/asn1c/per_decoder.o build/src/mms/iso_mms/asn1c/per_encoder.o build/src/mms/iso_mms/asn1c/per_support.o build/src/mms/iso_mms/asn1c/xer_decoder.o build/src/mms/iso_mms/asn1c/xer_encoder.o build/src/mms/iso_mms/asn1c/xer_support.o build/src/mms/iso_server/iso_connection.o build/src/mms/iso_server/iso_server.o build/src/logging/log_storage.o build/src/goose/goose_publisher.o build/src/goose/goose_receiver.o build/src/goose/goose_subscriber.o build/src/sampled_values/sv_publisher.o build/src/sampled_values/sv_subscriber.o build/src/iec61850/client/client_control.o build/src/iec61850/client/client_goose_control.o build/src/iec61850/client/client_report.o build/src/iec61850/client/client_report_control.o build/src/iec61850/client/client_sv_control.o build/src/iec61850/client/ied_connection.o build/src/iec61850/common/iec61850_common.o build/src/iec61850/server/model/cdc.o build/src/iec61850/server/model/config_file_parser.o build/src/iec61850/server/model/dynamic_model.o build/src/iec61850/server/model/model.o build/src/iec61850/server/mms_mapping/control.o build/src/iec61850/server/mms_mapping/logging.o build/src/iec61850/server/mms_mapping/mms_goose.o build/src/iec61850/server/mms_mapping/mms_mapping.o build/src/iec61850/server/mms_mapping/mms_sv.o build/src/iec61850/server/mms_mapping/reporting.o build/src/iec61850/server/impl/client_connection.o build/src/iec61850/server/impl/ied_server.o build/src/iec61850/server/impl/ied_server_config.o build/hal/socket/linux/socket_linux.o build/hal/thread/linux/thread_linux.o build/hal/ethernet/linux/ethernet_linux.o build/hal/filesystem/linux/file_provider_linux.o build/hal/time/unix/time.o build/hal/serial/linux/serial_port_linux.o build/hal/memory/lib_memory.o
 #  Implicit rule search has not been done.
-#  File does not exist.
+#  Last modified 2022-08-22 12:16:51.794152231
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
- 
-# Load=0/32=0%, Rehash=0, Collisions=0/10=0%
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 171):
 	$(AR) r $(LIB_NAME) $(LIB_OBJS)
 	$(RANLIB) $(LIB_NAME)
@@ -1446,53 +3568,129 @@ build/libiec61850.a: build/src/mms/iso_acse/acse.o build/src/mms/iso_presentatio
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-build/src/mms/iso_mms/asn1c/BOOLEAN.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/mms/iso_mms/asn1c/BOOLEAN.o: src/mms/iso_mms/asn1c/BOOLEAN.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/BOOLEAN'
+#  Last modified 2022-08-22 12:16:46.406046669
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/asn1/asn1_ber_primitive_value.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/WriteRequest.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.072898212
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/asn1/asn1_ber_primitive_value.o: src/mms/asn1/asn1_ber_primitive_value.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/asn1/asn1_ber_primitive_value'
+#  Last modified 2022-08-22 12:16:43.545990655
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/DefineNamedVariableListResponse.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/server/mms_named_variable_list.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.080898371
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/DefineNamedVariableListResponse.o: src/mms/iso_mms/asn1c/DefineNamedVariableListResponse.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/DefineNamedVariableListResponse'
+#  Last modified 2022-08-22 12:16:47.170061635
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/common/linked_list.o: src/common/linked_list.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/common/linked_list'
+#  Last modified 2022-08-22 12:16:43.313986112
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/UnconfirmedPDU.o: src/mms/iso_mms/asn1c/UnconfirmedPDU.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/UnconfirmedPDU'
+#  Last modified 2022-08-22 12:16:48.754092666
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/common/linked_list.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/Unsigned32.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/GetNameListRequest.o: src/mms/iso_mms/asn1c/GetNameListRequest.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/GetNameListRequest'
+#  Last modified 2022-08-22 12:16:47.42606665
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/server/mms_information_report.o: src/mms/iso_mms/server/mms_information_report.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/server/mms_information_report'
+#  Last modified 2022-08-22 12:16:44.25400452
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/Integer32.o: src/mms/iso_mms/asn1c/Integer32.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/Integer32'
+#  Last modified 2022-08-22 12:16:47.76607331
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/UnconfirmedPDU.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/GetNameListRequest.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/server/mms_information_report.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-build/src/mms/iso_mms/asn1c/Integer32.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/common/simple_allocator.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.044897654
+#  File has been updated.
+#  Successfully updated.
 
 # makefile (from 'Makefile', line 161)
 dynlib: CFLAGS += -fPIC
@@ -1503,94 +3701,202 @@ dynlib: build/libiec61850.so
 # variable set hash-table stats:
 # Load=1/32=3%, Rehash=0, Collisions=0/3=0%
 
-# Not a target:
-build/src/iec61850/server/impl/client_connection.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/iec61850/server/impl/client_connection.o: src/iec61850/server/impl/client_connection.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/server/impl/client_connection'
+#  Last modified 2022-08-22 12:16:51.314142825
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/TypeSpecification.o: src/mms/iso_mms/asn1c/TypeSpecification.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/TypeSpecification'
+#  Last modified 2022-08-22 12:16:48.730092196
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/TypeSpecification.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/ReadRequest.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.068898132
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/Data.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/client/mms_client_status.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.076898291
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/ConfirmedServiceRequest.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/iec61850/client/client_control.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.048897734
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/Data.o: src/mms/iso_mms/asn1c/Data.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/Data'
+#  Last modified 2022-08-22 12:16:47.098060224
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/mms/iso_mms/asn1c/IndexRangeSeq.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+hal/serial/linux/serial_port_linux.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-10 14:08:15
+#  File has been updated.
+#  Successfully updated.
+
+build/src/mms/iso_mms/asn1c/ConfirmedServiceRequest.o: src/mms/iso_mms/asn1c/ConfirmedServiceRequest.c config
+#  Implicit rule search has been done.
+ 
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ConfirmedServiceRequest'
+#  Last modified 2022-08-22 12:16:46.586050195
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/IndexRangeSeq.o: src/mms/iso_mms/asn1c/IndexRangeSeq.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/IndexRangeSeq'
+#  Last modified 2022-08-22 12:16:47.538068844
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # Not a target:
-build/src/sampled_values/sv_subscriber.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+src/mms/iso_mms/asn1c/Integer32.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 20:52:38.064898052
+#  File has been updated.
+#  Successfully updated.
 
-# Not a target:
-build/src/mms/iso_mms/asn1c/DeleteNamedVariableListRequest.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/sampled_values/sv_subscriber.o: src/sampled_values/sv_subscriber.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/sampled_values/sv_subscriber'
+#  Last modified 2022-08-22 12:16:49.722111631
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
-# Not a target:
-build/src/iec61850/server/model/dynamic_model.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/mms/iso_mms/asn1c/DeleteNamedVariableListRequest.o: src/mms/iso_mms/asn1c/DeleteNamedVariableListRequest.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/DeleteNamedVariableListRequest'
+#  Last modified 2022-08-22 12:16:47.218062575
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
-# Not a target:
-build/src/mms/iso_mms/asn1c/DefineNamedVariableListRequest.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/iec61850/server/model/dynamic_model.o: src/iec61850/server/model/dynamic_model.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/iec61850/server/model/dynamic_model'
+#  Last modified 2022-08-22 12:16:50.542127698
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
-# Not a target:
-build/src/mms/iso_mms/asn1c/ObjectName.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/mms/iso_mms/asn1c/DefineNamedVariableListRequest.o: src/mms/iso_mms/asn1c/DefineNamedVariableListRequest.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/DefineNamedVariableListRequest'
+#  Last modified 2022-08-22 12:16:47.142061086
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
-# Not a target:
-build/src/goose/goose_receiver.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/mms/iso_mms/asn1c/ObjectName.o: src/mms/iso_mms/asn1c/ObjectName.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/ObjectName'
+#  Last modified 2022-08-22 12:16:48.094079736
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
-# Not a target:
-build/src/mms/iso_mms/asn1c/DeleteNamedVariableListResponse.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+build/src/goose/goose_receiver.o: src/goose/goose_receiver.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/goose/goose_receiver'
+#  Last modified 2022-08-22 12:16:49.598109202
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
+
+build/src/mms/iso_mms/asn1c/DeleteNamedVariableListResponse.o: src/mms/iso_mms/asn1c/DeleteNamedVariableListResponse.c config
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/mms/iso_mms/asn1c/DeleteNamedVariableListResponse'
+#  Last modified 2022-08-22 12:16:47.238062967
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 178):
+	@echo compiling $(notdir $<)
+	$(SILENCE)mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $(LIB_INCLUDES) $(OUTPUT_OPTION) $<
+	
 
 # files hash-table stats:
-# Load=196/1024=19%, Rehash=0, Collisions=79/584=14%
+# Load=374/1024=37%, Rehash=0, Collisions=400/1652=24%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 2 (0) / strings = 528 / storage = 14198 B / avg = 26 B
-# current buf: size = 8162 B / used = 6083 B / count = 138 / avg = 44 B
-# other used: total = 8115 B / count = 390 / avg = 20 B
-# other free: total = 47 B / max = 47 B / min = 47 B / avg = 47 B
+# strcache buffers: 4 (3) / strings = 884 / storage = 27894 B / avg = 31 B
+# current buf: size = 8162 B / used = 3448 B / count = 96 / avg = 35 B
+# other used: total = 24446 B / count = 788 / avg = 31 B
+# other free: total = 40 B / max = 30 B / min = 5 B / avg = 13 B
 
-# strcache performance: lookups = 796 / hit rate = 33%
+# strcache performance: lookups = 1686 / hit rate = 47%
 # hash-table stats:
-# Load=528/8192=6%, Rehash=0, Collisions=39/796=5%
-# Finished Make data base on Mon Aug 22 11:59:37 2022
+# Load=884/8192=11%, Rehash=0, Collisions=82/1686=5%
+# Finished Make data base on Wed Aug 24 18:37:55 2022
 
  
