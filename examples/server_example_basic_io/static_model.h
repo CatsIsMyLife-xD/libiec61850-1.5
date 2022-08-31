@@ -81,6 +81,11 @@ extern DataAttribute iedModel_GenericIO_GGIO1_AnIn4_mag;
 extern DataAttribute iedModel_GenericIO_GGIO1_AnIn4_mag_f;
 extern DataAttribute iedModel_GenericIO_GGIO1_AnIn4_q;
 extern DataAttribute iedModel_GenericIO_GGIO1_AnIn4_t;
+extern DataObject    iedModel_GenericIO_GGIO1_AnIn5;
+extern DataAttribute iedModel_GenericIO_GGIO1_AnIn5_mag;
+extern DataAttribute iedModel_GenericIO_GGIO1_AnIn5_mag_f;
+extern DataAttribute iedModel_GenericIO_GGIO1_AnIn5_q;
+extern DataAttribute iedModel_GenericIO_GGIO1_AnIn5_t;
 extern DataObject    iedModel_GenericIO_GGIO1_SPCSO1;
 extern DataAttribute iedModel_GenericIO_GGIO1_SPCSO1_origin;
 extern DataAttribute iedModel_GenericIO_GGIO1_SPCSO1_origin_orCat;
@@ -230,6 +235,11 @@ extern DataAttribute iedModel_GenericIO_GGIO1_Ind4_t;
 #define IEDMODEL_GenericIO_GGIO1_AnIn4_mag_f (&iedModel_GenericIO_GGIO1_AnIn4_mag_f)
 #define IEDMODEL_GenericIO_GGIO1_AnIn4_q (&iedModel_GenericIO_GGIO1_AnIn4_q)
 #define IEDMODEL_GenericIO_GGIO1_AnIn4_t (&iedModel_GenericIO_GGIO1_AnIn4_t)
+#define IEDMODEL_GenericIO_GGIO1_AnIn5 (&iedModel_GenericIO_GGIO1_AnIn5)
+#define IEDMODEL_GenericIO_GGIO1_AnIn5_mag (&iedModel_GenericIO_GGIO1_AnIn5_mag)
+#define IEDMODEL_GenericIO_GGIO1_AnIn5_mag_f (&iedModel_GenericIO_GGIO1_AnIn5_mag_f)
+#define IEDMODEL_GenericIO_GGIO1_AnIn5_q (&iedModel_GenericIO_GGIO1_AnIn5_q)
+#define IEDMODEL_GenericIO_GGIO1_AnIn5_t (&iedModel_GenericIO_GGIO1_AnIn5_t)
 #define IEDMODEL_GenericIO_GGIO1_SPCSO1 (&iedModel_GenericIO_GGIO1_SPCSO1)
 #define IEDMODEL_GenericIO_GGIO1_SPCSO1_origin (&iedModel_GenericIO_GGIO1_SPCSO1_origin)
 #define IEDMODEL_GenericIO_GGIO1_SPCSO1_origin_orCat (&iedModel_GenericIO_GGIO1_SPCSO1_origin_orCat)

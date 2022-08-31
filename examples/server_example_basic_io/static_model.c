@@ -1045,6 +1045,70 @@ DataAttribute iedModel_GenericIO_GGIO1_AnIn4_t = {
     NULL,
     0};
 
+DataObject iedModel_GenericIO_GGIO1_AnIn5 = {
+    DataObjectModelType,
+    "AnIn5",
+    (ModelNode*) &iedModel_GenericIO_GGIO1,
+    (ModelNode*) &iedModel_GenericIO_GGIO1_SPCSO1,
+    (ModelNode*) &iedModel_GenericIO_GGIO1_AnIn5_mag,
+    0
+};
+
+DataAttribute iedModel_GenericIO_GGIO1_AnIn5_mag_f = {
+    DataAttributeModelType,
+    "f",
+    (ModelNode*) &iedModel_GenericIO_GGIO1_AnIn5_mag,
+    NULL,
+    NULL,
+    0,
+    IEC61850_FC_MX,
+    IEC61850_FLOAT32,
+    0 + TRG_OPT_DATA_CHANGED,
+    NULL,
+    0};
+
+DataAttribute iedModel_GenericIO_GGIO1_AnIn5_mag = {
+    DataAttributeModelType,
+    "mag",
+    (ModelNode*) &iedModel_GenericIO_GGIO1_AnIn5,
+    (ModelNode*) &iedModel_GenericIO_GGIO1_AnIn5_q,
+    (ModelNode*) &iedModel_GenericIO_GGIO1_AnIn5_mag_f,
+    0,
+    IEC61850_FC_MX,
+    IEC61850_CONSTRUCTED,
+    0 + TRG_OPT_DATA_CHANGED,
+    NULL,
+    0};
+
+
+
+DataAttribute iedModel_GenericIO_GGIO1_AnIn5_q = {
+    DataAttributeModelType,
+    "q",
+    (ModelNode*) &iedModel_GenericIO_GGIO1_AnIn5,
+    (ModelNode*) &iedModel_GenericIO_GGIO1_AnIn5_t,
+    NULL,
+    0,
+    IEC61850_FC_MX,
+    IEC61850_QUALITY,
+    0 + TRG_OPT_QUALITY_CHANGED,
+    NULL,
+    0};
+
+DataAttribute iedModel_GenericIO_GGIO1_AnIn5_t = {
+    DataAttributeModelType,
+    "t",
+    (ModelNode*) &iedModel_GenericIO_GGIO1_AnIn5,
+    NULL,
+    NULL,
+    0,
+    IEC61850_FC_MX,
+    IEC61850_TIMESTAMP,
+    0,
+    NULL,
+    0};
+
+
 DataObject iedModel_GenericIO_GGIO1_SPCSO1 = {
     DataObjectModelType,
     "SPCSO1",
