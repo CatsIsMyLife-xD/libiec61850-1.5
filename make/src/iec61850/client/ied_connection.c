@@ -3004,7 +3004,7 @@ void
 IedConnection_createDataSet(IedConnection self, IedClientError* error, const char* dataSetReference,
         LinkedList /* <char*> */dataSetElements)
 {
-    char domainIdBuffer[65];
+    char domainIdBuffer[65*2];
     char itemIdBuffer[DATA_SET_MAX_NAME_LENGTH + 1];
 
     const char* domainId;

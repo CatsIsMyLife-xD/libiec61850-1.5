@@ -24,24 +24,27 @@ int main(int argc, char** argv)
         IedServer_destroy(iedServer);
         exit(-1);
     }
-    FILE *file, *file2;
+    
 
-    float num1, num2, num3, num4, num5;
     //Работа сервера
     while (1){
+        FILE *file, *file2;
+        float num1, num2, num3, num4, num5;
         //printf ("День %i \n", Count);
         system("python3 gen.py");
         file = fopen("gen.txt", "r");
         file2 = fopen("example.txt", "r");
         //Считывание данных  из файла
-        while (fscanf(file, "%f%f%f", &num1, &num2, &num3) != EOF && fscanf(file2, "%f%f", &num4, &num5)){
+        fscanf(file2, "%f%f", &num4, &num5);
+        while (fscanf(file, "%f%f%f", &num1, &num2, &num3) != EOF){
             uint64_t timestamp = Hal_getTimeInMs();
             //Отправка данных на клиента
             IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_GenericIO_GGIO1_AnIn1_mag_f, num1);
             IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_GenericIO_GGIO1_AnIn2_mag_f, num2);
             IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_GenericIO_GGIO1_AnIn3_mag_f, num3);
             IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_GenericIO_GGIO1_AnIn4_mag_f, num4);
-            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_GenericIO_GGIO1_AnIn5_mag_f, num5);
+            IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_GenericIO_GGIO1_AnIn1_mag_f, num5);
+            printf("%f\t%f\t%f\t%f\t%f \n", num1, num2, num3, num4, num5);
             IedServer_unlockDataModel(iedServer);
         }
         Thread_sleep(1000);

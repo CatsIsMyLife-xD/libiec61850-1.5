@@ -1054,19 +1054,6 @@ DataObject iedModel_GenericIO_GGIO1_AnIn5 = {
     0
 };
 
-DataAttribute iedModel_GenericIO_GGIO1_AnIn5_mag_f = {
-    DataAttributeModelType,
-    "f",
-    (ModelNode*) &iedModel_GenericIO_GGIO1_AnIn5_mag,
-    NULL,
-    NULL,
-    0,
-    IEC61850_FC_MX,
-    IEC61850_FLOAT32,
-    0 + TRG_OPT_DATA_CHANGED,
-    NULL,
-    0};
-
 DataAttribute iedModel_GenericIO_GGIO1_AnIn5_mag = {
     DataAttributeModelType,
     "mag",
@@ -1080,7 +1067,18 @@ DataAttribute iedModel_GenericIO_GGIO1_AnIn5_mag = {
     NULL,
     0};
 
-
+DataAttribute iedModel_GenericIO_GGIO1_AnIn5_mag_f = {
+    DataAttributeModelType,
+    "f",
+    (ModelNode*) &iedModel_GenericIO_GGIO1_AnIn5_mag,
+    NULL,
+    NULL,
+    0,
+    IEC61850_FC_MX,
+    IEC61850_FLOAT32,
+    0 + TRG_OPT_DATA_CHANGED,
+    NULL,
+    0};
 
 DataAttribute iedModel_GenericIO_GGIO1_AnIn5_q = {
     DataAttributeModelType,
